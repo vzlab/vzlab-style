@@ -1,0 +1,50 @@
+@import 'fonts';
+@import 'variables';
+
+:root {
+    font: 16px/1.414 $sans-serif;
+    font-weight: 400;
+    background: $background;
+    color: $text;
+    box-sizing: border-box;
+    outline-color: $selection-color;
+}
+* {
+    font-weight: inherit;
+    box-sizing: inherit;
+    outline-color: inherit;
+}
+body {
+    margin: 0;
+    position: relative;
+}
+a {
+    color: $selection-color;
+}
+[tabindex]:not([readonly]):not([disabled]) {
+    cursor: pointer;
+}
+::selection {
+    background-color: $selection-color;
+    color: $black;
+}
+::placeholder {
+    color: inherit;
+    opacity: .25;
+
+}
+[hidden] {
+    display: none;
+}
+.faded {
+    opacity: .3;
+    font-style: italic;
+}
+.draggable, [draggable=true] {
+    cursor: grab;
+}
+.dragging {
+    cursor: grabbing;
+}
+
+@import 'blocks/*';

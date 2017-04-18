@@ -1,0 +1,164 @@
+// =============================================================================
+// Synonyms
+// -----------------------------------------------------------------------------
+
+// colors
+$white: #fff;
+$black: #000;
+$gray-1: mix($white, $black, 1 / 8 * 100);
+$gray-2: mix($white, $black, 2 / 8 * 100);
+$gray-3: mix($white, $black, 3 / 8 * 100);
+$gray-4: mix($white, $black, 4 / 8 * 100);
+$gray-5: mix($white, $black, 5 / 8 * 100);
+$gray-6: mix($white, $black, 6 / 8 * 100);
+$gray-7: mix($white, $black, 7 / 8 * 100);
+$gray-lightest: $gray-7;
+$gray-lighter: $gray-6;
+$gray-light: $gray-5;
+$gray: $gray-4;
+$gray-dark: $gray-3;
+$gray-darker: $gray-2;
+$gray-darkest: $gray-1;
+$green: #cf0;
+$pink: #ec0d8b;
+$yellow: gold;
+
+// sizes
+$short: 15rem;
+
+// times
+$fast: 250ms;
+
+// type
+$sans-serif: "Titillium Web", sans-serif;
+
+
+// =============================================================================
+// Colors
+// -----------------------------------------------------------------------------
+
+$color-info: teal;
+$color-success: $green;
+$color-warning: $yellow;
+$color-error: $pink;
+
+
+// =============================================================================
+// General site styles
+// -----------------------------------------------------------------------------
+
+$selection-color: $green;
+$background: $gray-darker;
+$text: $white;
+
+
+// =============================================================================
+// Layout
+// -----------------------------------------------------------------------------
+
+$layout-header-height: 60px;
+
+
+// =============================================================================
+// Grids
+// -----------------------------------------------------------------------------
+
+$grid-gutter: 1rem;
+$grid-columns: 12;
+
+
+// =============================================================================
+// Navbar
+// -----------------------------------------------------------------------------
+
+$navbar-height: 60px;
+$navbar-color: $white;
+$navbar-background: $background;
+$navbar-link-hover-background: $gray-dark;
+
+
+// =============================================================================
+// Buttons
+// -----------------------------------------------------------------------------
+
+$buttons: (
+// type: background color hover:background
+default: lightgray black lighten(lightgray, 20%),
+primary: dodgerblue white lighten(dodgerblue, 20%),
+secondary: mix(lightgray, dodgerblue) white lighten(mix(lightgray, dodgerblue), 20%),
+yes: yellowgreen white lighten(yellowgreen, 20%),
+no: salmon white lighten(salmon, 20%),
+danger: crimson white lighten(crimson, 20%),
+);
+
+
+// =============================================================================
+// Flashes
+// -----------------------------------------------------------------------------
+
+$flashes: (
+// type: background border-color color
+default: rgba(dimgray, .33) dimgray $white,
+info: rgba(teal, .33) teal $white,
+success: rgba(yellowgreen, .33) yellowgreen $white,
+warning: rgba($yellow, .33) $yellow $white,
+error: rgba(crimson, .33) crimson $white,
+);
+
+
+// =============================================================================
+// Forms
+// -----------------------------------------------------------------------------
+
+$form-color: $white;
+$form-active-color: $selection-color;
+$form-error-color: $color-warning;
+$form-field-padding: 0.5rem 1rem;
+
+
+// =============================================================================
+// Pagination
+// -----------------------------------------------------------------------------
+
+$pagination: (
+active-color: tomato,
+disabled-background: $yellow,
+);
+$pagination-active-color: $selection-color;
+
+
+// =============================================================================
+// Progress bar
+// -----------------------------------------------------------------------------
+
+$progress-bar-color: $pink;
+
+
+// =============================================================================
+// Image grid
+// -----------------------------------------------------------------------------
+
+$image-grid-gutters: 1rem;
+$image-grid-sorting-marker-width: .125rem;
+
+
+// =============================================================================
+// Comments
+// -----------------------------------------------------------------------------
+
+$comment-background-color: $gray;
+$comment-background-color-active: $pink;
+
+
+// =============================================================================
+// Count bubble
+// -----------------------------------------------------------------------------
+
+$count-bubble-color: $pink;
+$count-bubble-text: $white;
+
+
+// =============================================================================
+// Spinner
+// -----------------------------------------------------------------------------
+$spinner-color: $pink;
