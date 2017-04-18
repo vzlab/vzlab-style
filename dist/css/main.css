@@ -461,12 +461,6 @@ body.busy {
   border-right-color: transparent;
   border-bottom-color: transparent; }
 
-.feedback-submission {
-  width: 100%;
-  background: #ec0d8b;
-  color: #fff;
-  padding: 1rem 0; }
-
 .flash {
   margin: 1rem 0;
   padding: .5rem 1rem;

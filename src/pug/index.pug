@@ -1,9 +1,16 @@
+mixin section(title)
+    section.ks__section
+        .grid
+            h1.ks__header #{title}
+            block
+    
 doctype html
 html(lang="en")
     head
         meta(charset="utf-8")
         title vz.lab | style
         link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="css/kitchen-sink.css")
     body
         .layout
             .layout__header
@@ -11,15 +18,24 @@ html(lang="en")
 
             .layout__body
                 .layout__content
-                    include blocks/_actions-card
-                    include blocks/_actions
-                    include blocks/_buttons
-
+                    +section("Action card")
+                        include blocks/_actions-card
+                    +section("Form actions")
+                        include blocks/_actions
+                    +section("Buttons")
+                        include blocks/_buttons
+                    //- +section("Comments")
+                    //-     include blocks/_comment
+                    //- +section("Count bubbles")
+                    //-     include blocks/_count-bubble
+                    +section("Flashes")
+                        include blocks/_flash
+                    
                 .layout__post-content
                     section.post-content post-content
 
                 .layout__footer
                     footer.footer footer
 
-        // scripts
+        //- scripts
         script(src="js/header-shadow.js")
