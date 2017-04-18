@@ -1,0 +1,34 @@
+@import "../mixins/type";
+
+.navbar {
+    height: $navbar-height;
+    color: $navbar-color;
+    background: $navbar-background;
+    font-size: 85%;
+}
+
+.navbar__content {
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+    > * {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+    }
+    > * {
+        padding: 0 1.5rem;
+    }
+    > a {
+        @include unlink;
+        transition: $fast background;
+        &:hover {
+            background: $navbar-link-hover-background;
+        }
+    }
+}
+
+.navbar__brand {
+    display: block;
+    padding: 15px 0;
+}

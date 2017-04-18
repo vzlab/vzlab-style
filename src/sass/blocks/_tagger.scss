@@ -1,0 +1,23 @@
+.tagger {
+    position: absolute;
+    cursor: crosshair;
+}
+
+.tagger__tag {
+    position: absolute;
+    background: rgba($pink, 1/3);
+    border: 2px solid rgba($white, 1/2);
+    cursor: pointer;
+    transition: 250ms border-color;
+}
+.tagger__tag:not(.tagger__tag--active):hover {
+    border: 2px solid rgba($white, 2/3);
+}
+.tagger__tag--active {
+    background: rgba($pink, 1/2);
+    border: 2px solid $white;
+}
+.tagger__tag--draft {
+    background: rgba($green, 1/2);
+    border: 2px solid $white;
+}

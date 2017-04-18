@@ -1,0 +1,31 @@
+$lightbox-content-padding: 3rem;
+$lightbox-overlay-color: rgba($gray-light, .95);
+
+.lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    padding: $lightbox-content-padding;
+    z-index: 1000;
+}
+.lightbox__overlay {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: $lightbox-overlay-color;
+    z-index: 1;
+}
+.lightbox__content {
+    position: relative;
+    width: 100%; height: 100%;
+    background: $black;
+    box-shadow: 0rem 4rem 4rem -2rem rgba($black, .5);
+    z-index: 2;
+}
+.lightbox__close {
+    z-index: 300000;
+    position: absolute;
+    top: 0; left: 0;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+}

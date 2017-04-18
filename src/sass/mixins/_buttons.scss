@@ -1,0 +1,16 @@
+@mixin reset-button {
+    appearance: none;
+    display: inline-block;
+    margin: unset;
+    font: inherit;
+    border: none;
+    padding: unset;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    background: none;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}

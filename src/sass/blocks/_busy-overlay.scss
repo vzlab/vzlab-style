@@ -1,0 +1,29 @@
+.busy-overlay {
+    display: none;
+}
+
+body.busy {
+    overflow: hidden;
+    .busy-overlay {
+        display: flex;
+        z-index: 90001; // I'ts over nine thousaaaaand!
+        background: rgba($gray-lightest, .75);
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .busy-overlay__spinner {
+        width: 5rem; height: 5rem;
+        border-radius: 50%;
+        border: .5rem solid rgba($spinner-color, .25);
+        border-top-color: rgba($spinner-color, .75);
+        border-bottom-color: rgba($spinner-color, .75);
+        animation: spin .5s infinite linear;
+        will-change: transform;
+    }
+}
+@keyframes spin {
+    100% { transform: rotate(1turn) }
+}

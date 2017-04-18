@@ -1,0 +1,29 @@
+$defaults: (
+    active-color: $white,
+    active-background: $pink,
+    disabled-color: dimgray,
+    disabled-background: gray,
+);
+$pagination: map-merge($pagination, $defaults);
+
+.pagination {
+    margin: 2rem 0;
+}
+.pagination__content {
+    display: flex;
+    justify-content: center;
+}
+.pagination__button {
+    @extend .button;
+    @extend .button--small;
+    margin: 0 .25rem;
+
+    &--active {
+        color: map-get($pagination, 'active-color');
+        background: map-get($pagination, 'active-background');
+    }
+    &[disabled] {
+        color: map-get($pagination, 'disabled-color');
+        background: map-get($pagination, 'disabled-background');
+    }
+}

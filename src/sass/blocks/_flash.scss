@@ -1,0 +1,18 @@
+.flash {
+    $default: map-get($flashes, 'default');
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background: nth($default, 1);
+    border-left: .125rem solid nth($default, 2);
+    color: nth($default, 3);
+}
+@each $type, $colors in $flashes {
+    .flash--#{$type} {
+        background: nth($colors, 1) !important;
+        border-color: nth($colors, 2) !important;
+        color: nth($colors, 3) !important;
+    }
+}
+.flash__container {
+    margin: 2rem 0 -2rem;
+}

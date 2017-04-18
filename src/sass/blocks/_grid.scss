@@ -1,0 +1,46 @@
+.grid {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 $grid-gutter;
+    &--full-width {
+        max-width: none;
+    }
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 #{$grid-gutter / -2};
+}
+.grid__col,
+.grid__flex {
+    margin: 0 #{$grid-gutter / 2};
+    flex: 0 0 auto;
+}
+.grid__col--end {
+    margin-left: auto;
+}
+@for $i from 1 through $grid-columns {
+    .grid__col--#{$i} {
+        width: calc(100% / 12 * #{$i} - #{$grid-gutter});
+    }
+}
+@for $i from 1 through $grid-columns {
+    .grid__flex--#{$i} {
+        flex: $i;
+    }
+}
+.grid__col--top,
+.grid__col--center,
+.grid__col--bottom {
+    display: flex;
+    flex-direction: column;
+}
+.grid__col--top {
+    justify-content: flex-start;
+}
+.grid__col--center {
+    justify-content: center;
+}
+.grid__col--bottom {
+    justify-content: flex-end;
+}

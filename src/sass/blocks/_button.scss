@@ -1,0 +1,102 @@
+@import '../mixins/buttons';
+@import '../mixins/type';
+
+.button {
+    $default: map-get($buttons, 'default');
+    @include reset-button;
+
+    // size
+    margin-bottom: .5rem;
+    padding: .5rem 2rem;
+    height: 3rem;
+
+    // alignment
+    vertical-align: middle;
+
+    // font
+    line-height: 2rem;
+    font-size: 85%;
+    white-space: nowrap;
+    &:not(.button--link) {
+        @include uppercase;
+    }
+
+    // colors
+    background: nth($default, 1);
+    color: nth($default, 2);
+
+    // interaction
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+    // square
+    &.button--square { width: 3rem }
+}
+.button--link {
+    background: none;
+    color: inherit;
+}
+.button--small {
+    line-height: 2rem;
+    padding: .25rem 1rem;
+    height: 2.5rem;
+    &.button--square { width: 2.5rem }
+}
+.button--micro {
+    margin: 0;
+    padding: 0 .5rem;
+    height: 1.5rem;
+    line-height: inherit;
+    &.button--square {
+        width: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+.button--block {
+    display: block;
+    width: 100%;
+}
+.button--no-margin {
+    margin: 0;
+}
+.button--square {
+    padding: 0;
+}
+@each $type, $color in $buttons {
+    .button--#{$type} {
+        background: nth($color, 1);
+        color: nth($color, 2) ;
+        &[disabled] {
+            background: desaturate(nth($color, 1), 100%);
+        }
+    }
+    .button--#{$type}.button--link {
+        color: nth($color, 1);
+        background: none;
+    }
+}
+
+
+// Animations
+.button {
+    transition: $fast background;
+}
+.button:hover,
+.button:focus {
+    $default: map-get($buttons, 'default');
+    background: nth($default, 3);
+}
+@each $type, $color in $buttons {
+    .button--#{$type}:hover:not(.button--link),
+    .button--#{$type}:focus:not(.button--link) {
+        background: nth($color, 3);
+        &[disabled] {
+            background: desaturate(nth($color, 1), 100%);
+        }
+    }
+    .button--link:hover,
+    .button--link:focus {
+        background: none;
+    }
+}

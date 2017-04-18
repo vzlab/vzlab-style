@@ -1,0 +1,40 @@
+.comments-panel {
+    background: $black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.comments-panel__media {
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 auto;
+}
+.comments-panel__comments {
+    width: 400px;
+    flex: 0 0 auto;
+}
+.comments-panel__no-comments {
+    margin: 4rem 2rem;
+    text-align: center;
+    opacity: .5;
+    font-style: italic;
+}
+
+.tmp-media-bg,
+.tmp-media-fg,
+{
+    position: absolute;
+    left: 0; top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tmp-media-bg {
+    width: calc(100% + 80px); height: calc(100% + 80px);
+    background-size: cover;
+    filter: blur(20px) brightness(40%);
+    margin: -40px;
+}
+.tmp-media-fg {
+    width: 100%; height: 100%;
+    background-size: contain;
+}

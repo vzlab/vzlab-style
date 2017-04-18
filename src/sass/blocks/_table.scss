@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+}
+td, th {
+    padding: .5rem;
+}
+th {
+    font-weight: bolder;
+    padding: .5rem 1rem;
+}
+th[scope=col] {
+    text-align: left;
+    background: $gray-dark;
+    &:last-child {
+        text-align: right;
+    }
+}

@@ -1,0 +1,16 @@
+.actions-card {
+    width: 90%;
+    max-width: 30rem;
+    margin: 4rem auto;
+    background: $gray;
+    > * {
+        padding: 1rem;
+    }
+}
+.actions-card__header {
+    background: $black;
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+}
