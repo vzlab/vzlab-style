@@ -12,7 +12,7 @@ const plumberNotify = () => plumber({
 })
 
 gulp.task('sass', () => gulp
-    .src('src/sass/**/*.s[ac]ss')
+    .src('src/sass/vzlab-style/**/*.s[ac]ss')
     .pipe(plumberNotify())
     .pipe(sass({
         importer: sassGlobbing,
@@ -24,8 +24,8 @@ gulp.task('sass', () => gulp
 
 gulp.task('pug', () => gulp
     .src([
-        'src/pug/**/*.pug',
-        '!src/pug/**/_*.pug',
+        'src/docs/pug/**/*.pug',
+        '!src/docs/pug/**/_*.pug',
     ])
     .pipe(plumberNotify())
     .pipe(pug())
@@ -36,6 +36,6 @@ gulp.task('pug', () => gulp
 gulp.task('build', [ 'sass', 'pug' ])
 gulp.task('default', [ 'build' ], () => {
     livereload.listen();
-    gulp.watch('src/sass/**/*.s[ac]ss', [ 'sass' ]);
-    gulp.watch('src/pug/**/*.pug', [ 'pug' ]);
+    gulp.watch('src/sass/vzlab-style/**/*.s[ac]ss', [ 'sass' ]);
+    gulp.watch('src/docs/pug/**/*.pug', [ 'pug' ]);
 })

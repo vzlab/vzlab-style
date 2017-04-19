@@ -1,7 +1,7 @@
 {
   "name": "vzlab-style",
   "version": "1.0.0",
-  "main": "Gulpfile.js",
+  "main": "index.js",
   "repository": "https://bitbucket.org/vetorzero/vzlab-vzlab-style.git",
   "author": "Luiz “Felds” Liscia <dev@felds.com.br>",
   "license": "MIT",
