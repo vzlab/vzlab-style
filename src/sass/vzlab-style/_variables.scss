@@ -3,72 +3,72 @@
 // -----------------------------------------------------------------------------
 
 // colors
-$white: #fff;
-$black: #000;
-$gray-1: mix($white, $black, 1 / 8 * 100);
-$gray-2: mix($white, $black, 2 / 8 * 100);
-$gray-3: mix($white, $black, 3 / 8 * 100);
-$gray-4: mix($white, $black, 4 / 8 * 100);
-$gray-5: mix($white, $black, 5 / 8 * 100);
-$gray-6: mix($white, $black, 6 / 8 * 100);
-$gray-7: mix($white, $black, 7 / 8 * 100);
-$gray-lightest: $gray-7;
-$gray-lighter: $gray-6;
-$gray-light: $gray-5;
-$gray: $gray-4;
-$gray-dark: $gray-3;
-$gray-darker: $gray-2;
-$gray-darkest: $gray-1;
-$green: #cf0;
-$pink: #ec0d8b;
-$yellow: gold;
-$blue: dodgerblue;
+$white: #fff !default;
+$black: #000 !default;
+$gray-1: mix($white, $black, 1 / 8 * 100) !default;
+$gray-2: mix($white, $black, 2 / 8 * 100) !default;
+$gray-3: mix($white, $black, 3 / 8 * 100) !default;
+$gray-4: mix($white, $black, 4 / 8 * 100) !default;
+$gray-5: mix($white, $black, 5 / 8 * 100) !default;
+$gray-6: mix($white, $black, 6 / 8 * 100) !default;
+$gray-7: mix($white, $black, 7 / 8 * 100) !default;
+$gray-lightest: $gray-7 !default;
+$gray-lighter: $gray-6 !default;
+$gray-light: $gray-5 !default;
+$gray: $gray-4 !default;
+$gray-dark: $gray-3 !default;
+$gray-darker: $gray-2 !default;
+$gray-darkest: $gray-1 !default;
+$green: #cf0 !default;
+$pink: #ec0d8b !default;
+$yellow: gold !default;
+$blue: dodgerblue !default;
 
 // sizes
-$short: 15rem;
-$thin: 2px;
+$short: 15rem !default;
+$thin: 2px !default;
 
 // times
-$fast: 250ms;
+$fast: 250ms !default;
 
 // type
-$sans-serif: "Titillium Web", sans-serif;
+$sans-serif: "Titillium Web", sans-serif !default;
 
 
 // =============================================================================
 // Colors
 // -----------------------------------------------------------------------------
 
-$color-info: teal;
-$color-success: $green;
-$color-warning: $yellow;
-$color-error: $pink;
+$color-info: teal !default;
+$color-success: $green !default;
+$color-warning: $yellow !default;
+$color-error: $pink !default;
 
 
 // =============================================================================
 // General site styles
 // -----------------------------------------------------------------------------
 
-$accent: $green;
-$selection-background: $accent;
-$selection-color: $black;
-$background: $gray-darker;
-$text: $white;
+$accent: $green !default;
+$selection-background: $accent !default;
+$selection-color: $black !default;
+$background: $gray-darker !default;
+$text: $white !default;
 
 
 // =============================================================================
 // Layout
 // -----------------------------------------------------------------------------
 
-$layout-header-height: 60px;
+$layout-header-height: 60px !default;
 
 
 // =============================================================================
 // Grids
 // -----------------------------------------------------------------------------
 
-$grid-gutter: 1rem;
-$grid-columns: 12;
+$grid-gutter: 1rem !default;
+$grid-columns: 12 !default;
 
 
 
@@ -83,17 +83,17 @@ $grid-columns: 12;
 // Action
 // -----------------------------------------------------------------------------
 
-$action-border-color: $gray-dark;
+$action-border-color: $gray-dark !default;
 
 
 // =============================================================================
 // Navbar
 // -----------------------------------------------------------------------------
 
-$navbar-height: 60px;
-$navbar-color: $white;
-$navbar-background: $background;
-$navbar-link-hover-background: $gray-dark;
+$navbar-height: 60px !default;
+$navbar-color: $white !default;
+$navbar-background: $background !default;
+$navbar-link-hover-background: $gray-dark !default;
 
 
 // =============================================================================
@@ -108,7 +108,7 @@ $buttons: (
     yes: yellowgreen white lighten(yellowgreen, 20%),
     no: salmon white lighten(salmon, 20%),
     danger: crimson white lighten(crimson, 20%),
-);
+) !default;
 
 
 // =============================================================================
@@ -122,74 +122,74 @@ $flashes: (
     success: rgba(yellowgreen, .33) yellowgreen $white,
     warning: rgba($yellow, .33) $yellow $white,
     error: rgba(crimson, .33) crimson $white,
-);
+) !default;
 
 
 // =============================================================================
 // Action card
 // -----------------------------------------------------------------------------
 
-$action-card-max-width: 40rem;
-$action-card-background: $black;
-$action-card-text: $white;
+$action-card-max-width: 40rem !default;
+$action-card-background: $black !default;
+$action-card-text: $white !default;
 
 
 // =============================================================================
 // Forms
 // -----------------------------------------------------------------------------
 
-$form-color: $white;
-$form-active-color: $selection-color;
-$form-error-color: $color-warning;
-$form-field-padding: 0.5rem 1rem;
+$form-color: $white !default;
+$form-active-color: $selection-color !default;
+$form-error-color: $color-warning !default;
+$form-field-padding: 0.5rem 1rem !default;
 
 
 // =============================================================================
 // Pagination
 // -----------------------------------------------------------------------------
 
-$pagination-color: $text;
-$pagination-background: $gray;
-$pagination-background-hover: $gray-light;
-$pagination-active-color: $black;
-$pagination-active-background: $accent;
-$pagination-active-background-hover: $accent;
-$pagination-disabled-color: $gray;
-$pagination-disabled-background: $gray-dark;
+$pagination-color: $text !default;
+$pagination-background: $gray !default;
+$pagination-background-hover: $gray-light !default;
+$pagination-active-color: $black !default;
+$pagination-active-background: $accent !default;
+$pagination-active-background-hover: $accent !default;
+$pagination-disabled-color: $gray !default;
+$pagination-disabled-background: $gray-dark !default;
 
 
 // =============================================================================
 // Progress bar
 // -----------------------------------------------------------------------------
 
-$progress-bar-color: $pink;
+$progress-bar-color: $pink !default;
 
 
 // =============================================================================
 // Image grid
 // -----------------------------------------------------------------------------
 
-$image-grid-gutters: 1rem;
-$image-grid-sorting-marker-width: .125rem;
+$image-grid-gutters: 1rem !default;
+$image-grid-sorting-marker-width: .125rem !default;
 
 
 // =============================================================================
 // Comments
 // -----------------------------------------------------------------------------
 
-$comment-background-color: $gray;
-$comment-background-color-active: $pink;
+$comment-background-color: $gray !default;
+$comment-background-color-active: $pink !default;
 
 
 // =============================================================================
 // Count bubble
 // -----------------------------------------------------------------------------
 
-$count-bubble-color: $pink;
-$count-bubble-text: $white;
+$count-bubble-color: $pink !default;
+$count-bubble-text: $white !default;
 
 
 // =============================================================================
 // Spinner
 // -----------------------------------------------------------------------------
-$spinner-color: $pink;
+$spinner-color: $pink !default;
