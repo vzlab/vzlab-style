@@ -19,6 +19,9 @@ html(lang="en")
             .layout__body
                 .layout__content
                     
+                    +section("Grid")
+                        include blocks/_grid
+                    
                     +section("Action card")
                         include blocks/_actions-card
                     
@@ -47,7 +50,6 @@ html(lang="en")
 
                         //- _footer.scss
                         //- _form.scss
-                        //- _grid.scss
                         //- _image-card.scss
                         //- _images-grid.scss
                         //- _layout.scss
@@ -67,11 +69,11 @@ html(lang="en")
 
 
                     
-                .layout__post-content
-                    section.post-content post-content
-
-                .layout__footer
-                    footer.footer footer
+                //- .layout__post-content
+                //-     section.post-content post-content
+                //- 
+                //- .layout__footer
+                //-     footer.footer footer
 
         //- scripts
         script(src="js/header-shadow.js")
