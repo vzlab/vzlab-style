@@ -1,0 +1,67 @@
+.comment {
+    position: relative;
+    background: $comment-background;
+    transition: background-color $fast;
+    margin: 1rem 1rem 2rem;
+}
+.comment__body {
+    padding: 1rem;
+    overflow: auto;
+}
+.comment__actions {
+    position: absolute;
+    top: 100%; right: 0;
+    width: 100%;
+    font-size: 90%;
+    text-align: right;
+    * {
+        opacity: .5;
+        transition: 250ms opacity;
+        will-change: opacity;
+        &:focus {
+            opacity: 1;
+        }
+    }
+}
+
+// activation
+.comment--is-active {
+    background: $comment-background-active;
+    &::before {
+        border-bottom-color: $comment-background-active;
+        border-right-color: $comment-background-active;
+    }
+}
+
+
+// tail
+.comment--tail-left::before,
+.comment--tail-right::before {
+    content: "";
+    position: absolute;
+    width: 0; height: 0;
+    border: .5rem solid transparent;
+    transition: border-color $fast;
+}
+.comment--tail-left::before {
+    right: 100%; bottom: 1rem;
+    border-bottom-color: $comment-background;
+    border-right-color: $comment-background;
+}
+.comment--is-active {
+    &.comment--tail-left::before {
+        border-bottom-color: $comment-background-active;
+        border-right-color: $comment-background-active;
+    }
+}
+.comment--tail-right::before {
+    left: 100%; top: 1rem;
+    border-top-color: $comment-background;
+    border-left-color: $comment-background;
+}
+.comment--is-active {
+    &.comment--tail-right::before {
+        border-top-color: $comment-background-active;
+        border-left-color: $comment-background-active;
+    }
+}

@@ -4,7 +4,7 @@ h3 Regular
         .form__label
             label(for='field_01') A field
         .form__control
-            input#field_01(type='text', placeholder='Placeholder')
+            input#field_01(type='text', placeholder='Placeholder' value="Some value")
     .grid__row
         .grid__col.grid__col--3
             .form__group
@@ -31,11 +31,14 @@ h3 Regular
                     input#field_01(type='text', placeholder='Placeholder')
     .grid__row
         .grid__col.grid__col--3
-            .form__group
+            .form__group.form__group--has-errors
                 .form__label
                     label(for='field_01') A field
                 .form__control
                     input#field_01(type='text', placeholder='Placeholder')
+                .form__errors
+                    ul
+                        li There was an error.
         .grid__col.grid__col--4
             .form__group
                 .form__label

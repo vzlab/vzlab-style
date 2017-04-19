@@ -15,21 +15,19 @@ $form-text-inputs: "input[type=text], input[type=number], input[type=url], input
 }
 .form__control {
     select, textarea, #{$form-text-inputs} {
-        height: 40px;
         display: block;
-        width: 100%;
+        width: 100%; height: $form-field-height;
         padding: $form-field-padding;
         border: 0;
-        border-bottom: .125rem solid rgba($form-color, .20);
-        background: rgba($form-color, .05);
-        background: $gray-dark;
-        color: $form-color;
+        border-bottom: $thin solid $form-field-accent;
+        background: $form-field-background;
+        color: $form-field-text;
         font: inherit;
         outline: none;
-        transition: border-color 250ms;
+        transition: border-color $fast;
 
         &:focus:not([readonly]):not([disabled]) {
-            border-color: $form-active-color;
+            border-color: $form-field-active-accent;
         }
     }
     textarea {
@@ -38,22 +36,19 @@ $form-text-inputs: "input[type=text], input[type=number], input[type=url], input
     }
 }
 .form__errors {
-    margin-top: -1rem;
-    background: mix($form-error-color, $gray-dark, 30%);
-    color: $form-error-color;
+    background: $form-error-background;
+    color: $form-error-text;
     font-size: 80%;
     ul {
         list-style-type: none;
         padding: $form-field-padding;
-        padding-top: .25rem;
-        padding-bottom: .25rem;
-        margin-bottom: 0;
+        margin: 0;
     }
 }
 .form__group--has-errors .form__control input {
-    border-color: rgba($form-error-color, .20);
+    border-color: $form-field-error-accent;
     &:focus:not([readonly]):not([disabled]) {
-        border-color: $form-error-color;
+        border-color: $form-field-error-accent;
     }
 }
 .form__checker {

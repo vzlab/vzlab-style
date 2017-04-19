@@ -138,10 +138,15 @@ $action-card-text: $white !default;
 // Forms
 // -----------------------------------------------------------------------------
 
-$form-color: $white !default;
-$form-active-color: $accent !default;
-$form-error-color: $color-warning !default;
+$form-field-background: $gray-dark !default;
+$form-field-text: $white !default;
+$form-field-accent: $gray !default;
+$form-field-active-accent: $accent !default;
+$form-field-error-accent: $yellow !default;
+$form-field-height: 40px !default;
 $form-field-padding: 0.5rem 1rem !default;
+$form-error-background: mix($yellow, $gray-darkest, 50) !default;
+$form-error-text: $yellow !default;
 
 
 // =============================================================================
@@ -177,8 +182,9 @@ $image-grid-sorting-marker-width: .125rem !default;
 // Comments
 // -----------------------------------------------------------------------------
 
-$comment-background-color: $gray !default;
-$comment-background-color-active: $pink !default;
+$comment-text: $white;
+$comment-background: $gray !default;
+$comment-background-active: $pink !default;
 
 
 // =============================================================================

@@ -302,6 +302,65 @@ label {
 .button--link:focus {
   background: none; }
 
+.comment {
+  position: relative;
+  background: gray;
+  transition: background-color 250ms;
+  margin: 1rem 1rem 2rem; }
+
+.comment__body {
+  padding: 1rem;
+  overflow: auto; }
+
+.comment__actions {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  font-size: 90%;
+  text-align: right; }
+  .comment__actions * {
+    opacity: .5;
+    transition: 250ms opacity;
+    will-change: opacity; }
+    .comment__actions *:focus {
+      opacity: 1; }
+
+.comment--is-active {
+  background: #ec0d8b; }
+  .comment--is-active::before {
+    border-bottom-color: #ec0d8b;
+    border-right-color: #ec0d8b; }
+
+.comment--tail-left::before,
+.comment--tail-right::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: .5rem solid transparent;
+  transition: border-color 250ms; }
+
+.comment--tail-left::before {
+  right: 100%;
+  bottom: 1rem;
+  border-bottom-color: gray;
+  border-right-color: gray; }
+
+.comment--is-active.comment--tail-left::before {
+  border-bottom-color: #ec0d8b;
+  border-right-color: #ec0d8b; }
+
+.comment--tail-right::before {
+  left: 100%;
+  top: 1rem;
+  border-top-color: gray;
+  border-left-color: gray; }
+
+.comment--is-active.comment--tail-right::before {
+  border-top-color: #ec0d8b;
+  border-left-color: #ec0d8b; }
+
 .flash {
   margin: 1rem 0;
   padding: .5rem 1rem;
@@ -349,13 +408,12 @@ label {
   display: block; }
 
 .form__control select, .form__control textarea, .form__control input[type=text], .form__control input[type=number], .form__control input[type=url], .form__control input[type=tel], .form__control input[type=email], .form__control input[type=password], .form__control input:not([type]) {
-  height: 40px;
   display: block;
   width: 100%;
+  height: 40px;
   padding: 0.5rem 1rem;
   border: 0;
-  border-bottom: 0.125rem solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid gray;
   background: #606060;
   color: #fff;
   font: inherit;
@@ -369,19 +427,16 @@ label {
   resize: vertical; }
 
 .form__errors {
-  margin-top: -1rem;
-  background: #908443;
+  background: #907c10;
   color: gold;
   font-size: 80%; }
   .form__errors ul {
     list-style-type: none;
     padding: 0.5rem 1rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    margin-bottom: 0; }
+    margin: 0; }
 
 .form__group--has-errors .form__control input {
-  border-color: rgba(255, 215, 0, 0.2); }
+  border-color: gold; }
   .form__group--has-errors .form__control input:focus:not([readonly]):not([disabled]) {
     border-color: gold; }
 
