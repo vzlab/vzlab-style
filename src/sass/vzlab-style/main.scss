@@ -25,6 +25,9 @@ a {
 label {
     cursor: pointer;
 }
+picture {
+    position: relative;
+}
 [tabindex]:not([readonly]):not([disabled]) {
     cursor: pointer;
 }

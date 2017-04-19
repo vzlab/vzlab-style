@@ -1,0 +1,27 @@
+.count-bubble {
+    background: $count-bubble-color;
+    color: $count-bubble-text;
+    position: absolute;
+    top: -.5rem; right: -.5rem;
+    padding: .25rem .5rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+.count-bubble::after {
+    content: "";
+    position: absolute;
+    width: 0; height: 0;
+    top: 100%; left: $count-bubble-tail-size;
+    border: #{$count-bubble-tail-size / 2} solid $count-bubble-color;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+
+// states
+.count-bubble--faded {
+    background: $count-bubble-faded-color;
+    color: $count-bubble-faded-text;
+    &::after {
+        border-color: $count-bubble-faded-color;
+    }
+}

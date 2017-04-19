@@ -41,6 +41,9 @@ a {
 label {
   cursor: pointer; }
 
+picture {
+  position: relative; }
+
 [tabindex]:not([readonly]):not([disabled]) {
   cursor: pointer; }
 
@@ -360,6 +363,33 @@ label {
 .comment--is-active.comment--tail-right::before {
   border-top-color: #ec0d8b;
   border-left-color: #ec0d8b; }
+
+.count-bubble {
+  background: #ec0d8b;
+  color: #fff;
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+  padding: .25rem .5rem;
+  min-width: 1.5rem;
+  text-align: center; }
+
+.count-bubble::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 0.5rem;
+  border: 0.25rem solid #ec0d8b;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important; }
+
+.count-bubble--faded {
+  background: #bfbfbf;
+  color: #fff; }
+  .count-bubble--faded::after {
+    border-color: #bfbfbf; }
 
 .flash {
   margin: 1rem 0;
