@@ -4,12 +4,10 @@
 :root {
     font: 16px/1.414 $sans-serif;
     font-weight: 400;
-    // background: $background;
-    // color: $text;
-    background: white;
-    color: #444;
+    background: $background;
+    color: $text;
     box-sizing: border-box;
-    outline-color: $selection-color;
+    outline-color: $accent;
 }
 * {
     font-weight: inherit;
@@ -21,14 +19,14 @@ body {
     position: relative;
 }
 a {
-    color: $selection-color;
+    color: $accent;
 }
 [tabindex]:not([readonly]):not([disabled]) {
     cursor: pointer;
 }
 ::selection {
-    background-color: $selection-color;
-    color: $black;
+    background-color: $selection-background;
+    color: $selection-color;
 }
 ::placeholder {
     color: inherit;
