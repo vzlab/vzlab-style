@@ -1,16 +1,20 @@
 .actions-card {
-    width: 90%;
     max-width: 30rem;
+    max-width:$action-card-max-width;
+    background:$action-card-background;
+    color: $action-card-text;
     margin: 4rem auto;
-    background: $gray;
+    overflow: auto;
     > * {
-        padding: 1rem;
+        margin: 1rem;
     }
 }
 .actions-card__header {
-    background: $black;
     h1 {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
+}
+.actions-card__content {
+    margin-bottom: 2rem;
 }

@@ -2,8 +2,8 @@
 :root {
   font: 16px/1.414 "Titillium Web", sans-serif;
   font-weight: 400;
-  background: #404040;
-  color: #fff;
+  background: white;
+  color: #444;
   box-sizing: border-box;
   outline-color: #cf0; }
 
@@ -58,18 +58,21 @@ a {
   cursor: grabbing; }
 
 .actions-card {
-  width: 90%;
   max-width: 30rem;
+  max-width: 40rem;
+  background: #000;
+  color: #fff;
   margin: 4rem auto;
-  background: gray; }
+  overflow: auto; }
   .actions-card > * {
-    padding: 1rem; }
+    margin: 1rem; }
 
-.actions-card__header {
-  background: #000; }
-  .actions-card__header h1 {
-    margin: 0;
-    font-size: 1.5rem; }
+.actions-card__header h1 {
+  margin: 0;
+  font-size: 2rem; }
+
+.actions-card__content {
+  margin-bottom: 2rem; }
 
 .actions {
   border-top: 0.125rem solid rgba(255, 255, 255, 0.1);

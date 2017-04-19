@@ -1,3 +1,5 @@
+@import "variables";
+
 .ks__section {
     // margin: 4rem 0 0;
     padding: 8rem 0;
@@ -9,7 +11,8 @@
 }
 .ks__pill {
     padding: .5rem;
-    background: dimgray;
+    background: $gray;
+    color: $white;
     text-align: center;
     border-radius: .25rem;
     margin-bottom: 1rem;
