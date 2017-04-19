@@ -1,0 +1,104 @@
+h3 Regular
+.form
+    .form__group
+        .form__label
+            label(for='field_01') A field
+        .form__control
+            input#field_01(type='text', placeholder='Placeholder')
+    .grid__row
+        .grid__col.grid__col--3
+            .form__group
+                .form__label
+                    label(for='field_01') Select
+                .form__control
+                    select
+                        option
+                        option(disabled) Unselectable
+                        option Selectable 01
+                        option Selectable 02
+                    //- input#field_01(type='text', placeholder='Placeholder')
+        .grid__col.grid__col--4
+            .form__group
+                .form__label
+                    label(for='field_01') A field
+                .form__control
+                    input#field_01(type='text', placeholder='Placeholder')
+        .grid__col.grid__col--5
+            .form__group
+                .form__label
+                    label(for='field_01') A field
+                .form__control
+                    input#field_01(type='text', placeholder='Placeholder')
+    .grid__row
+        .grid__col.grid__col--3
+            .form__group
+                .form__label
+                    label(for='field_01') A field
+                .form__control
+                    input#field_01(type='text', placeholder='Placeholder')
+        .grid__col.grid__col--4
+            .form__group
+                .form__label
+                    label(for='field_01') A field
+                .form__control
+                    input#field_01(type='text', placeholder='Placeholder')
+        .grid__col.grid__col--5
+            .form__group
+                .form__label
+                    label(for='field_01') A field
+                .form__control
+                    input#field_01(type='text', placeholder='Placeholder')
+    .form__group
+        .form__label
+            label(for='field_ta') Textarea
+        .form__control
+            textarea#field_ta(placeholder='Placeholder')
+
+    .grid__row
+        .grid__col.grid__col--6
+            .form__group
+                .form__label Select as many as you want
+                .form__control
+                    .form__checker: label
+                        input(type="checkbox")
+                        | Czeck me out
+                    .form__checker: label
+                        input(type="checkbox")
+                        | Czeck me out
+                    .form__checker: label
+                        input(type="checkbox" disabled)
+                        | Czeck me out
+        .grid__col.grid__col--6
+            .form__group
+                .form__label Select one
+                .form__control
+                    .form__checker
+                        input(type="radio" id="radio-01" name="radio")
+                        label(for="radio-01") Czeck me out
+                    .form__checker
+                        input(type="radio" id="radio-02" name="radio")
+                        label(for="radio-02") Czeck me out
+                    .form__checker
+                        input(type="radio" id="radio-03" name="radio")
+                        label(for="radio-03") Czeck me out
+                    .form__checker
+                        input(type="radio" id="radio-04" name="radio" disabled)
+                        label(for="radio-04") Czeck me out
+
+
+h3 Linear
+.form
+    .grid__row
+        .grid__flex.grid__flex--1.grid__col--bottom
+            .form__group
+                .form__label Label
+                .form__control
+                    input(type='text', name='', value='')
+        .grid__flex.grid__flex--1.grid__col--bottom
+            .form__group
+                .form__label Label
+                .form__control
+                    input(type='text', name='', value='')
+        .grid__flex.grid__flex--0.grid__col--bottom
+            .form__group
+                button.button.button--primary.button--small.button--block.button--no-margin Submit

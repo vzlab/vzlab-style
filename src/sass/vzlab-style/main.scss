@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'variables';
+@import 'accessibility';
 
 :root {
     font: 16px/1.414 $sans-serif;
@@ -20,6 +21,9 @@ body {
 }
 a {
     color: $accent;
+}
+label {
+    cursor: pointer;
 }
 [tabindex]:not([readonly]):not([disabled]) {
     cursor: pointer;

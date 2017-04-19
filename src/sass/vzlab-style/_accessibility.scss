@@ -1,0 +1,9 @@
+@import 'mixins/accessibility';
+
+.sr-only {
+    @include sr-only;
+    border: 20px solid tomato;
+}
+.sr-only-focusable {
+    @include sr-only-focusable;
+}
