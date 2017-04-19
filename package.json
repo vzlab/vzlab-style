@@ -1,4 +1,10 @@
 {
+  "name": "vzlab-style",
+  "version": "1.0.0",
+  "main": "Gulpfile.js",
+  "repository": "https://bitbucket.org/vetorzero/vzlab-vzlab-style.git",
+  "author": "Luiz “Felds” Liscia <dev@felds.com.br>",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
