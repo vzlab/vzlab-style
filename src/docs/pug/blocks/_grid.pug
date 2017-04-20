@@ -1,42 +1,87 @@
-.grid__row
-    .grid__col.grid__col--4
+//- 6 / md 4 / lg 3 / xl 2
+.g__r
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+    .g__c.g__c--sm-6.g__c--md-4.g__c--lg-3.g__c--xl-2
+        .ks__pill -
+
+h3 Non-responsive
+.g__r
+    .g__c.g__c--4
         .ks__pill 4
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-    .grid__col.grid__col--4
+    .g__c.g__c--4
         .ks__pill 4
-    .grid__col.grid__col--1
+    .g__c.g__c--1
         .ks__pill 1
-.grid__row
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-.grid__row
-    .grid__col.grid__col--3
+    .g__c.g__c--3
         .ks__pill 3
-    .grid__col.grid__col--7.grid__col--end
+    .g__c.g__c--7.g__c--end
         .ks__pill 7 end
 
 
-h3 Proportional
-.grid__row
-    .grid__flex.grid__flex--1
-        .ks__pill 1/5
-    .grid__flex.grid__flex--2
-        .ks__pill 2/5
-    .grid__flex.grid__flex--1
-        .ks__pill 1/5
-    .grid__flex.grid__flex--1
-        .ks__pill Something something 1/5
-.grid__row
-    .grid__flex
-        .ks__pill Introvert 01
-    .grid__flex.grid__flex--1
-        .ks__pill Extrovert
-    .grid__flex
-        .ks__pill Introvert 02
+h3 Custom grids
+p Thy can live in the same grid container when both grids share gutter sizes
+.g5__r
+    .g5__c.g5__c--1: .ks__pill 1/5
+    .g5__c.g5__c--1: .ks__pill 1/5
+    .g5__c.g5__c--1: .ks__pill 1/5
+    .g5__c.g5__c--1: .ks__pill 1/5
+    .g5__c.g5__c--1: .ks__pill 1/5
+.g7__r
+    .g7__c.g7__c--1: .ks__pill 1/7
+    .g7__c.g7__c--2: .ks__pill 2/7
+    .g7__c.g7__c--1: .ks__pill 1/7
+    .g7__c.g7__c--2: .ks__pill 2/7
+    .g7__c.g7__c--1: .ks__pill 1/7
+
+h3 Gutterless
+p You can also mix grid containers for great win
+.gutterless-grid__r
+    .gutterless-grid__c.gutterless-grid__c--1: .ks__pill.ks__pill--flat 1/12
+    .gutterless-grid__c.gutterless-grid__c--2: .ks__pill.ks__pill--flat 2/12
+    .gutterless-grid__c.gutterless-grid__c--3: .ks__pill.ks__pill--flat 3/12
+    .gutterless-grid__c.gutterless-grid__c--1: .ks__pill.ks__pill--flat 1/12
+    .gutterless-grid__c.gutterless-grid__c--5: .ks__pill.ks__pill--flat 5/12
+    
+    .gutterless-grid__c.gutterless-grid__c--12: .ks__pill.ks__pill--flat full
+    
+    .gutterless-grid__c.gutterless-grid__c--6: .ks__pill.ks__pill--flat 6/12
+    .gutterless-grid__c.gutterless-grid__c--2: .ks__pill.ks__pill--flat 2/12
+    .gutterless-grid__c.gutterless-grid__c--4: .ks__pill.ks__pill--flat 3/12
+
+
+//- h3 Proportional
+//- .g__r
+//-     .grid__flex.grid__flex--1
+//-         .ks__pill 1/5
+//-     .grid__flex.grid__flex--2
+//-         .ks__pill 2/5
+//-     .grid__flex.grid__flex--1
+//-         .ks__pill 1/5
+//-     .grid__flex.grid__flex--1
+//-         .ks__pill Something something 1/5
+//- .g__r
+//-     .grid__flex
+//-         .ks__pill Introvert 01
+//-     .grid__flex.grid__flex--1
+//-         .ks__pill Extrovert
+//-     .grid__flex
+//-         .ks__pill Introvert 02

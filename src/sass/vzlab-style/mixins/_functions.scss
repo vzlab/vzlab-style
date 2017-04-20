@@ -1,0 +1,31 @@
+// Max value of a list
+@function list-max($list) {
+    $result: 0;
+    @each $v in $list { $result: max($result, $v); }
+    @return $result;
+}
+
+// Min value of a list
+@function list-min($list) {
+    $result: 0;
+    @each $v in $list { $result: min($result, $v); }
+    @return $result;
+}
+
+// Max value of a map
+@function map-max($map) {
+    @return list-max(map-values($map));
+}
+
+// Min value of a map
+@function map-min($map) {
+    @return list-min(map-values($map));
+}
+
+// Fill all the values of a map with the same value
+@function map-fill($map, $value) {
+    @each $k, $_ in $map {
+        $map: map-merge($map, ($k: $value));
+    }
+    @return $map;
+}

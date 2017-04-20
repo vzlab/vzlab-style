@@ -11,5 +11,7 @@
   background: gray;
   color: #fff;
   text-align: center;
-  border-radius: .25rem;
-  margin-bottom: 1rem; }
+  border-radius: .25rem; }
+  .ks__pill--flat {
+    border-radius: 0;
+    border: thin solid #606060; }

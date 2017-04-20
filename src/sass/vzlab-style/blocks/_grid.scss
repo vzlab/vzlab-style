@@ -1,46 +1,144 @@
-.grid {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 $grid-gutter;
-    &--full-width {
-        max-width: none;
+@import '../mixins/functions';
+@import '../mixins/responsivity';
+
+// Grid
+
+@mixin grid($columns, $gutters, $row-selector: '&__r', $col-selector: '&__c') {
+    // fix gutters
+    @if type-of($gutters) == 'number' {
+        $gutters: map-fill($breakpoints, $gutters);
     }
-}
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 #{$grid-gutter / -2};
-}
-.grid__col,
-.grid__flex {
-    margin: 0 #{$grid-gutter / 2};
-    flex: 0 0 auto;
-}
-.grid__col--end {
+    // get first breakpoint for non-responsive columns
+    $first-breakpoint: nth(map-keys($breakpoints), 1);
+
+
+    // container
     margin-left: auto;
-}
-@for $i from 1 through $grid-columns {
-    .grid__col--#{$i} {
-        width: calc(100% / 12 * #{$i} - #{$grid-gutter});
+    margin-right: auto;
+    max-width: map-max($breakpoints);
+    @each $breakpoint in map-keys($breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            padding-left: map-get($gutters, $breakpoint);
+            padding-right: map-get($gutters, $breakpoint);
+        }
+    }
+
+    #{$row-selector} {
+        display: flex;
+        flex-wrap: wrap;
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                margin-left: (map-get($gutters, $breakpoint) / -2);
+                margin-right: (map-get($gutters, $breakpoint) / -2);
+            }
+        }
+    }
+
+    // fractions
+    #{$col-selector} {
+        width: 100%;
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                margin-left: (map-get($gutters, $breakpoint) / 2);
+                margin-right: (map-get($gutters, $breakpoint) / 2);
+                margin-bottom: map-get($gutters, $breakpoint);
+            }
+        }
+
+        // responsive goodness
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                @for $column from 1 through $columns {
+                    #{"&--" + $column} {
+                        width: calc(#{$column * 100% / $columns} - #{map-get($gutters, $first-breakpoint)});
+                    }
+                    #{"&--" + $breakpoint + "-" + $column} {
+                        width: calc(#{$column * 100% / $columns} - #{map-get($gutters, $breakpoint)});
+                    }
+                }
+            }
+        }
+
+        &--end {
+            margin-left: auto;
+        }
     }
 }
-@for $i from 1 through $grid-columns {
-    .grid__flex--#{$i} {
-        flex: $i;
-    }
+.g { @include grid($grid-columns, $grid-gutters) }
+.g5 { @include grid(5, $grid-gutters) }
+.g7 { @include grid(7, $grid-gutters) }
+.gutterless-grid { @include grid($grid-columns, 0px) }
+.grid {
+    // Legacy
+    @include grid($grid-columns, $grid-gutters, "&__row", "&__col");
 }
-.grid__col--top,
-.grid__col--center,
-.grid__col--bottom {
-    display: flex;
-    flex-direction: column;
-}
-.grid__col--top {
-    justify-content: flex-start;
-}
-.grid__col--center {
-    justify-content: center;
-}
-.grid__col--bottom {
-    justify-content: flex-end;
-}
+
+
+
+
+// @mixin grid($columns, $sizes, $gutter) {
+//     // container
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-left: ($gutter / 2);
+//     padding-right: ($gutter / 2);
+//
+//     @warn max(map-values($sizes));
+//     // &__r
+//     // &__c
+// }
+//
+//
+// .g {
+//     @include grid($grid-columns, $grid-breakpoints, $grid-gutter-width-base);
+// }
+
+
+
+// .grid {
+//     max-width: 1440px;
+//     margin: 0 auto;
+//     padding: 0 $grid-gutter;
+//     &--full-width {
+//         max-width: none;
+//     }
+// }
+// .grid__row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 #{$grid-gutter / -2};
+// }
+// .grid__col,
+// .grid__flex {
+//     margin: 0 #{$grid-gutter / 2};
+//     flex: 0 0 auto;
+// }
+// .grid__col--end {
+//     margin-left: auto;
+// }
+// @for $i from 1 through $grid-columns {
+//     .grid__col--#{$i} {
+//         @extend .grid__col;
+//         width: calc(100% / 12 * #{$i} - #{$grid-gutter});
+//     }
+// }
+// @for $i from 1 through $grid-columns {
+//     .grid__flex--#{$i} {
+//         flex: $i;
+//     }
+// }
+// .grid__col--top,
+// .grid__col--center,
+// .grid__col--bottom {
+//     display: flex;
+//     flex-direction: column;
+// }
+// .grid__col--top {
+//     justify-content: flex-start;
+// }
+// .grid__col--center {
+//     justify-content: center;
+// }
+// .grid__col--bottom {
+//     justify-content: flex-end;
+// }

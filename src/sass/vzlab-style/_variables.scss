@@ -67,9 +67,32 @@ $layout-header-height: 60px !default;
 // Grids
 // -----------------------------------------------------------------------------
 
-$grid-gutter: 1rem !default;
-$grid-columns: 12 !default;
+$grid-columns: 12;
+$grid-base-gutter: 1rem;
+// // Variable gutters
+// $grid-gutters: (
+//     xs: $grid-base-gutter,
+//     sm: $grid-base-gutter,
+//     md: $grid-base-gutter,
+//     lg: $grid-base-gutter,
+//     xl: $grid-base-gutter,
+//     max: $grid-base-gutter,
+// ) !default;
+$grid-gutters: 1rem !default;
 
+
+// =============================================================================
+// Responsivity
+// -----------------------------------------------------------------------------
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    max: 1440px,
+) !default;
 
 
 // =============================================================================
