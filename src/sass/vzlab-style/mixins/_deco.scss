@@ -1,0 +1,20 @@
+@mixin triangle-tail-top($size, $color) {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: calc(50% - #{$size / 2});
+        border: transparent solid $size;
+        border-bottom-color: $color;
+    }
+    // extend the hoverable area
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        background: transparent;
+        width: 100%;
+        height: $size;
+    }
+}

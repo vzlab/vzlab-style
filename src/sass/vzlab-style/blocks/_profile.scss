@@ -1,0 +1,60 @@
+@import '../mixins/deco';
+
+.profile {
+    position: relative;
+    // min-width: 10rem;
+    max-width: 20rem;
+    height: 60px;
+    background: $profile-background;
+    color: $profile-color;
+}
+.profile__card {
+    display: flex;
+    overflow: hidden;
+    padding: 0 1rem;
+    height: 100%;
+}
+.profile__avatar {
+    flex: 0;
+    margin-left: #{$profile-avatar-size / 8};
+
+    img {
+        display: block;
+        width: $profile-avatar-size;
+        height: $profile-avatar-size;
+        margin-top: (($profile-height - $profile-avatar-size) / 2);
+        border-radius: 50%;
+    }
+}
+.profile__name {
+    flex: 1;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+// actions
+.profile__hover-card {
+    @include triangle-tail-top($profile-hover-card-tail-size, $profile-hover-card-background);
+    position: absolute;
+    top: calc(100% + #{$profile-hover-card-tail-size});
+    left: 0; right: 0;
+    background: $profile-hover-card-background;
+    will-change: opacity;
+    opacity: 0;
+    transition: $fast opacity;
+    pointer-events: none;
+    box-shadow: 0 .25rem .5rem 0 rgba($black, .5);
+}
+.profile__actions {
+    margin: 1rem;
+}
+.profile:hover,
+.profile:focus {
+    .profile__hover-card {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

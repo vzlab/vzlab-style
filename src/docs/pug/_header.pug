@@ -8,15 +8,12 @@ header#header.navbar
                             img(src='images/logo.svg', alt='vz.lab', height='30px')
 
             .g__c.g__c--expand
-                nav.navbar__content
+                .navbar__content
                     a.navbar__link.navbar__link--active(href='#') An action
                     |
                     a.navbar__link(href='#') Another action
 
             .g__c.g__c--shrink
                 .navbar__content
-                    p
-                        | Logged in as &nbsp;
-                        em User Name
-                        |
-                    a(href='#') Log out
+                    include blocks/_profile
+                        

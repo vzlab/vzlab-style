@@ -194,6 +194,18 @@ $progress-bar-color: $pink !default;
 
 
 // =============================================================================
+// Profile
+// -----------------------------------------------------------------------------
+
+$profile-background: $background !default;
+$profile-color: $text !default;
+$profile-height: $navbar-height !default;
+$profile-hover-card-background: $black !default;
+$profile-avatar-size: ($navbar-height * 2/3) !default;
+$profile-hover-card-tail-size: .5rem !default;
+
+
+// =============================================================================
 // Image grid
 // -----------------------------------------------------------------------------
 
