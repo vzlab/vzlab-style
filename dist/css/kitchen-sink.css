@@ -145,6 +145,7 @@
             -ms-flex-direction: row;
                 flex-direction: row; } }
   .g5__c {
+    width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem; }
@@ -301,13 +302,22 @@
     .g5__c--end {
       margin-left: auto; }
     .g5__c--expand {
+      width: auto;
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto; }
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: 1;
+          flex-basis: 1; }
     .g5__c--shrink {
+      width: auto;
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto; }
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      flex-grow: 0; }
 
 .g7 {
   margin-left: auto;
@@ -439,6 +449,7 @@
             -ms-flex-direction: row;
                 flex-direction: row; } }
   .g7__c {
+    width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem; }
@@ -643,13 +654,22 @@
     .g7__c--end {
       margin-left: auto; }
     .g7__c--expand {
+      width: auto;
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto; }
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: 1;
+          flex-basis: 1; }
     .g7__c--shrink {
+      width: auto;
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto; }
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      flex-grow: 0; }
 
 .gutterless-grid {
   margin-left: auto;
@@ -781,6 +801,7 @@
             -ms-flex-direction: row;
                 flex-direction: row; } }
   .gutterless-grid__c {
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px; }
@@ -1105,16 +1126,25 @@
     .gutterless-grid__c--end {
       margin-left: auto; }
     .gutterless-grid__c--expand {
+      width: auto;
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto; }
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: 1;
+          flex-basis: 1; }
     .gutterless-grid__c--shrink {
+      width: auto;
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto; }
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      flex-grow: 0; }
 
-.ks__loading {
+.ks__image {
   position: relative; }
-  .ks__loading img {
+  .ks__image img {
     width: 100%;
     height: auto; }
