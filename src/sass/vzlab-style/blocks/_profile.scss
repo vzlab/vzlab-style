@@ -9,6 +9,14 @@
     background: $profile-background;
     color: $profile-color;
     font-size: .85rem;
+
+    &:hover,
+    &:focus {
+        background: $gray-dark;
+    }
+
+    will-change: background;
+    transition: $fast background;
 }
 .profile__card {
     display: flex;
@@ -57,6 +65,7 @@
 .profile:hover,
 .profile:focus {
     .profile__hover-card {
+        transition: $fast opacity #{$fast / 2};
         opacity: 1;
         pointer-events: auto;
     }

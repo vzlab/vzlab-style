@@ -1540,7 +1540,11 @@ picture {
   height: 60px;
   background: #404040;
   color: #fff;
-  font-size: .85rem; }
+  font-size: .85rem;
+  will-change: background;
+  transition: 250ms background; }
+  .profile:hover, .profile:focus {
+    background: #606060; }
 
 .profile__card {
   display: -webkit-box;
@@ -1611,5 +1615,6 @@ picture {
 
 .profile:hover .profile__hover-card,
 .profile:focus .profile__hover-card {
+  transition: 250ms opacity 125ms;
   opacity: 1;
   pointer-events: auto; }
