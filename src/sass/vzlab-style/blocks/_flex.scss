@@ -1,0 +1,19 @@
+.f {
+    display: flex;
+}
+.f--column {
+    flex-direction: column;
+
+    &.f--top {
+        justify-content: flex-start;
+    }
+    &.f--middle {
+        justify-content: center;
+    }
+    &.f--bottom {
+        justify-content: flex-end;
+    }
+}
+
+// @TODO add responsive variants
+// @TODO add cross-axis alignments and dimensions

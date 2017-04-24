@@ -1,0 +1,96 @@
+@import '../mixins/functions';
+@import '../mixins/responsivity';
+
+@mixin grid($columns, $gutters, $row-selector: '&__r', $col-selector: '&__c') {
+    // fix gutters
+    @if type-of($gutters) == 'number' {
+        $gutters: map-fill($breakpoints, $gutters);
+    }
+    // get first breakpoint for non-responsive columns
+    $first-breakpoint: nth(map-keys($breakpoints), 1);
+
+
+    // container
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: map-max($breakpoints);
+    @each $breakpoint in map-keys($breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            padding-left: map-get($gutters, $breakpoint);
+            padding-right: map-get($gutters, $breakpoint);
+        }
+    }
+
+
+    // rows
+
+    #{$row-selector} {
+        display: flex;
+        flex-wrap: wrap;
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                margin-left: (map-get($gutters, $breakpoint) / -2);
+                margin-right: (map-get($gutters, $breakpoint) / -2);
+            }
+        }
+
+        // flex directions
+        &--column {
+            flex-direction: column;
+        }
+        &--row {
+            flex-direction: row;
+        }
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                #{"&--#{$breakpoint}-column"} {
+                    flex-direction: column;
+                }
+                #{"&--#{$breakpoint}-row"} {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+
+
+    // columns
+
+    #{$col-selector} {
+        width: 100%;
+
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                margin-left: (map-get($gutters, $breakpoint) / 2);
+                margin-right: (map-get($gutters, $breakpoint) / 2);
+                margin-bottom: map-get($gutters, $breakpoint);
+            }
+        }
+
+        @each $breakpoint in map-keys($breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                @for $column from 1 through $columns {
+                    #{"&--" + $column} {
+                        width: calc(#{$column * 100% / $columns} - #{map-get($gutters, $first-breakpoint)});
+                    }
+                    #{"&--" + $breakpoint + "-" + $column} {
+                        width: calc(#{$column * 100% / $columns} - #{map-get($gutters, $breakpoint)});
+                    }
+                }
+            }
+        }
+
+        &--end {
+            margin-left: auto;
+        }
+
+        // flex
+        &--expand {
+            flex: 1 1 0;
+        }
+        &--shrink {
+            flex: 0 1 0;
+        }
+    }
+}

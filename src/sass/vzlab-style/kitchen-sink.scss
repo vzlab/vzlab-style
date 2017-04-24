@@ -1,4 +1,5 @@
 @import "variables";
+@import 'mixins/grid';
 
 .ks__section {
     // margin: 4rem 0 0;
@@ -20,3 +21,8 @@
         border-radius: 0;
     }
 }
+
+// Example grids
+.g5 { @include grid(5, $grid-gutters) }
+.g7 { @include grid(7, $grid-gutters) }
+.gutterless-grid { @include grid($grid-columns, 0px) }
