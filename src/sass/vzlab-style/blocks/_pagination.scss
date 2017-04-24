@@ -26,3 +26,9 @@
         background: $pagination-disabled-background;
     }
 }
+.pagination__button--page:not(.pagination__button--active) {
+    display: none;
+    @include media-breakpoint-up(sm) {
+        display: inline-block;
+    }
+}

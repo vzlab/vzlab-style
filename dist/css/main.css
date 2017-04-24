@@ -1,4 +1,108 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
+.display__none {
+  display: none; }
+
+.display__inline {
+  display: inline; }
+
+.display__block {
+  display: block; }
+
+.display__inline-block {
+  display: inline-block; }
+
+.display__none--xs {
+  display: none; }
+
+.display__inline--xs {
+  display: inline; }
+
+.display__block--xs {
+  display: block; }
+
+.display__inline-block--xs {
+  display: inline-block; }
+
+@media (min-width: 576px) {
+  .display__none--sm {
+    display: none; } }
+
+@media (min-width: 576px) {
+  .display__inline--sm {
+    display: inline; } }
+
+@media (min-width: 576px) {
+  .display__block--sm {
+    display: block; } }
+
+@media (min-width: 576px) {
+  .display__inline-block--sm {
+    display: inline-block; } }
+
+@media (min-width: 768px) {
+  .display__none--md {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .display__inline--md {
+    display: inline; } }
+
+@media (min-width: 768px) {
+  .display__block--md {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .display__inline-block--md {
+    display: inline-block; } }
+
+@media (min-width: 992px) {
+  .display__none--lg {
+    display: none; } }
+
+@media (min-width: 992px) {
+  .display__inline--lg {
+    display: inline; } }
+
+@media (min-width: 992px) {
+  .display__block--lg {
+    display: block; } }
+
+@media (min-width: 992px) {
+  .display__inline-block--lg {
+    display: inline-block; } }
+
+@media (min-width: 1200px) {
+  .display__none--xl {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .display__inline--xl {
+    display: inline; } }
+
+@media (min-width: 1200px) {
+  .display__block--xl {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .display__inline-block--xl {
+    display: inline-block; } }
+
+@media (min-width: 1440px) {
+  .display__none--max {
+    display: none; } }
+
+@media (min-width: 1440px) {
+  .display__inline--max {
+    display: inline; } }
+
+@media (min-width: 1440px) {
+  .display__block--max {
+    display: block; } }
+
+@media (min-width: 1440px) {
+  .display__inline-block--max {
+    display: inline-block; } }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1495,7 +1599,8 @@ picture {
   height: 60px;
   color: #fff;
   background: #404040;
-  font-size: 85%; }
+  font-size: 85%;
+  overflow: hidden; }
 
 .navbar__content {
   height: 60px;
@@ -1551,6 +1656,12 @@ picture {
   .pagination__button[disabled] {
     color: gray;
     background: #606060; }
+
+.pagination__button--page:not(.pagination__button--active) {
+  display: none; }
+  @media (min-width: 576px) {
+    .pagination__button--page:not(.pagination__button--active) {
+      display: inline-block; } }
 
 .profile {
   display: inline-block;
