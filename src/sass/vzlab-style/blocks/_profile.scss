@@ -1,12 +1,14 @@
 @import '../mixins/deco';
 
 .profile {
+    display: inline-block;
     position: relative;
-    // min-width: 10rem;
+    min-width: 10rem;
     max-width: 20rem;
     height: 60px;
     background: $profile-background;
     color: $profile-color;
+    font-size: .85rem;
 }
 .profile__card {
     display: flex;
@@ -46,7 +48,8 @@
     opacity: 0;
     transition: $fast opacity;
     pointer-events: none;
-    box-shadow: 0 .25rem .5rem 0 rgba($black, .5);
+    box-shadow: 0 .25rem 1rem rgba($black, .5),
+                0 .75rem .5rem -.5rem rgba($black, .25);
 }
 .profile__actions {
     margin: 1rem;

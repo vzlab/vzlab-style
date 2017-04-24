@@ -18,6 +18,9 @@
   overflow: visible;
   clip: auto; }
 
+.center {
+  text-align: center; }
+
 :root {
   font: 16px/1.414 "Titillium Web", sans-serif;
   font-weight: 400;
@@ -1530,11 +1533,14 @@ picture {
     background: #606060; }
 
 .profile {
+  display: inline-block;
   position: relative;
+  min-width: 10rem;
   max-width: 20rem;
   height: 60px;
   background: #404040;
-  color: #fff; }
+  color: #fff;
+  font-size: .85rem; }
 
 .profile__card {
   display: -webkit-box;
@@ -1583,7 +1589,7 @@ picture {
   opacity: 0;
   transition: 250ms opacity;
   pointer-events: none;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5), 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.25); }
   .profile__hover-card::before {
     content: "";
     position: absolute;
@@ -1595,6 +1601,7 @@ picture {
     content: "";
     position: absolute;
     bottom: 100%;
+    left: 0;
     background: transparent;
     width: 100%;
     height: 0.5rem; }
