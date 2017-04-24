@@ -1618,3 +1618,42 @@ picture {
   transition: 250ms opacity 125ms;
   opacity: 1;
   pointer-events: auto; }
+
+.progress-bar {
+  pointer-events: none;
+  position: absolute;
+  height: 0.5rem;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #ec0d8b;
+  opacity: 1;
+  transition: 1000ms opacity 500ms, 250ms width linear; }
+  .progress-bar--complete {
+    opacity: 0; }
+  .progress-bar--infinite {
+    width: 100%;
+    -webkit-animation: 2s infinite-progress-bar infinite;
+            animation: 2s infinite-progress-bar infinite; }
+
+@-webkit-keyframes infinite-progress-bar {
+  from {
+    -webkit-transform: translateX(-50%) scaleX(0);
+            transform: translateX(-50%) scaleX(0); }
+  50% {
+    -webkit-transform: none;
+            transform: none; }
+  to {
+    -webkit-transform: translateX(50%) scaleX(0);
+            transform: translateX(50%) scaleX(0); } }
+
+@keyframes infinite-progress-bar {
+  from {
+    -webkit-transform: translateX(-50%) scaleX(0);
+            transform: translateX(-50%) scaleX(0); }
+  50% {
+    -webkit-transform: none;
+            transform: none; }
+  to {
+    -webkit-transform: translateX(50%) scaleX(0);
+            transform: translateX(50%) scaleX(0); } }

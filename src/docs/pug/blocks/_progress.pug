@@ -1,0 +1,31 @@
+.g(style="max-width: 600px")
+    .g__r
+        
+        .g__c.g__c--sm-6
+            h3 Loading…
+            .ks__loading
+                img(src="https://unsplash.it/800/500/?image=1084")
+                .progress-bar#loading
+                    
+        .g__c.g__c--sm-6
+            h3 Infinite
+            .ks__loading
+                img(src="https://unsplash.it/800/500/?image=1072")
+                .progress-bar.progress-bar--infinite
+                    
+
+script.
+    // simulate loading update
+    ;(function (el) {
+        var loadingCounter = 0
+        var loadingStartTime = Date.now()
+        var loadingPeriod = 9000 // ms
+        function loadingUpdateWidth() {
+            var loaded = ((Date.now() - loadingStartTime) % loadingPeriod) / loadingPeriod
+            var width = Math.round(loaded * 100) + "%"
+            el.style.width = width
+            
+            window.setTimeout(loadingUpdateWidth, 800)
+        }
+        loadingUpdateWidth()
+    })(document.querySelector('#loading'))

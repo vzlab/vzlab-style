@@ -26,3 +26,14 @@
 .g5 { @include grid(5, $grid-gutters) }
 .g7 { @include grid(7, $grid-gutters) }
 .gutterless-grid { @include grid($grid-columns, 0px) }
+
+
+// explample images for progress bar
+.ks__loading {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

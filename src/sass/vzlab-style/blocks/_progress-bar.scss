@@ -1,0 +1,28 @@
+$progress-bar-color: gold !default;
+$progress-bar-width: .5rem !default;
+
+.progress-bar {
+    pointer-events: none;
+    position: absolute;
+    height: $progress-bar-width;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: $progress-bar-color;
+    opacity: 1;
+    transition: 1000ms opacity 500ms, 250ms width linear;
+
+    &--complete {
+        opacity: 0;
+    }
+    &--infinite {
+        width: 100%;
+        animation: 2s infinite-progress-bar infinite;
+    }
+}
+
+@keyframes infinite-progress-bar {
+  from { transform: translateX(-50%) scaleX(0) }
+  50% { transform: none }
+  to { transform: translateX(50%) scaleX(0) }
+}

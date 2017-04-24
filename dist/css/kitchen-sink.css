@@ -1112,3 +1112,9 @@
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto; }
+
+.ks__loading {
+  position: relative; }
+  .ks__loading img {
+    width: 100%;
+    height: auto; }
