@@ -1805,10 +1805,10 @@ h1, h2, h3, h4, h5 {
   .pagination__button:hover, .pagination__button:focus {
     background: #9f9f9f; }
   .pagination__button--active {
-    color: #000;
-    background: #cf0; }
+    color: #fff;
+    background: #ec0d8b; }
     .pagination__button--active:hover, .pagination__button--active:focus {
-      background: #cf0; }
+      background: #ec0d8b; }
   .pagination__button[disabled] {
     color: gray;
     background: #606060; }

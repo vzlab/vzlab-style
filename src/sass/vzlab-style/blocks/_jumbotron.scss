@@ -1,12 +1,6 @@
 @import '../mixins/hacks-and-stuff';
 @import '../mixins/responsivity';
 
-$jumbotron-padding: 2rem !default;
-$jumbotron-padding-large: 4rem !default;
-$jumbotron-border: 1px solid $gray !default;
-$jumbotron-background: $gray-dark !default;
-$jumbotron-text: $white !default;
-
 
 .jumbotron {
     @include clearfix;
@@ -37,6 +31,7 @@ $jumbotron-text: $white !default;
     @extend .text-end;
 }
 
+// responsivity
 @include media-breakpoint-up(md) {
     .jumbotron {
         padding: $jumbotron-padding-large;

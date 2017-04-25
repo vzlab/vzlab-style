@@ -179,9 +179,9 @@ $form-error-text: $yellow !default;
 $pagination-color: $text !default;
 $pagination-background: $gray !default;
 $pagination-background-hover: $gray-light !default;
-$pagination-active-color: $black !default;
-$pagination-active-background: $accent !default;
-$pagination-active-background-hover: $accent !default;
+$pagination-active-color: $white !default;
+$pagination-active-background: $pink !default;
+$pagination-active-background-hover: $pink !default;
 $pagination-disabled-color: $gray !default;
 $pagination-disabled-background: $gray-dark !default;
 
@@ -237,3 +237,14 @@ $count-bubble-tail-size: .5rem;
 // Spinner
 // -----------------------------------------------------------------------------
 $spinner-color: $pink !default;
+
+
+// =============================================================================
+// Spinner
+// -----------------------------------------------------------------------------
+
+$jumbotron-padding: 2rem !default;
+$jumbotron-padding-large: 4rem !default;
+$jumbotron-border: 1px solid $gray !default;
+$jumbotron-background: $gray-dark !default;
+$jumbotron-text: $white !default;
