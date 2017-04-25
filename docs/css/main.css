@@ -1694,7 +1694,13 @@ picture {
     width: 40px;
     height: 40px;
     margin-top: 10px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    will-change: filter;
+    transition: 250ms -webkit-filter;
+    transition: 250ms filter;
+    transition: 250ms filter, 250ms -webkit-filter; }
 
 .profile__name {
   -webkit-box-flex: 1;
@@ -1742,6 +1748,11 @@ picture {
 
 .profile__actions {
   margin: 1rem; }
+
+.profile:hover .profile__avatar img,
+.profile:focus .profile__avatar img {
+  -webkit-filter: none;
+          filter: none; }
 
 .profile:hover .profile__hover-card,
 .profile:focus .profile__hover-card {

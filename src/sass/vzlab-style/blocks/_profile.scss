@@ -34,6 +34,9 @@
         height: $profile-avatar-size;
         margin-top: (($profile-height - $profile-avatar-size) / 2);
         border-radius: 50%;
+        filter: grayscale(100%);
+        will-change: filter;
+        transition: $fast filter;
     }
 }
 .profile__name {
@@ -64,6 +67,9 @@
 }
 .profile:hover,
 .profile:focus {
+    .profile__avatar img {
+        filter: none;
+    }
     .profile__hover-card {
         transition: $fast opacity #{$fast / 2};
         opacity: 1;
