@@ -18,7 +18,7 @@ gulp.task('sass', () => gulp
         importer: sassGlobbing,
     }))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('docs/css/'))
     .pipe(livereload())
 )
 
@@ -29,7 +29,7 @@ gulp.task('pug', () => gulp
     ])
     .pipe(plumberNotify())
     .pipe(pug())
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('docs/'))
     .pipe(livereload())
 )
 
