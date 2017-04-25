@@ -126,7 +126,7 @@
   text-align: left;
   text-align: start; }
 
-.text-end, .jumbotron__actions {
+.text-end {
   text-align: right;
   text-align: end; }
 
@@ -1761,8 +1761,7 @@ h1, h2, h3, h4, h5 {
       flex-grow: 0; }
 
 .jumbotron {
-  margin: 2rem;
-  padding: 2rem;
+  margin: 2rem 0;
   border: none;
   background: #606060;
   color: #fff;
@@ -1770,35 +1769,29 @@ h1, h2, h3, h4, h5 {
   .jumbotron::before, .jumbotron::after {
     content: '';
     display: table; }
-  .jumbotron :first-child {
-    margin-top: 0; }
-  .jumbotron :last-child {
-    margin-bottom: 0; }
+  .jumbotron h1 {
+    font-size: 2.4em; }
   .jumbotron--standalone {
-    margin: 4rem 2rem; }
+    margin: 4rem 0; }
 
 .jumbotron__title,
 .jumbotron__content,
 .jumbotron__actions {
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
-
-.jumbotron__title h1 {
-  font-size: 3rem; }
+  margin: 2rem; }
+  .jumbotron__title--gapless,
+  .jumbotron__content--gapless,
+  .jumbotron__actions--gapless {
+    margin: 0; }
 
 @media (min-width: 768px) {
   .jumbotron {
-    padding: 4rem;
     font-size: 1.2rem; }
     .jumbotron--standalone {
-      margin: 8rem 4rem; }
+      margin: 8rem 0; }
   .jumbotron__title,
   .jumbotron__content,
   .jumbotron__actions {
-    margin-bottom: 4rem;
-    margin-top: 4rem; }
-  .jumbotron__title h1 {
-    font-size: 6rem; } }
+    margin: 4rem; } }
 
 .layout {
   min-height: 100vh;
