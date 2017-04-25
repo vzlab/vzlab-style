@@ -2,6 +2,22 @@
   padding: 2rem 0;
   border-bottom: 0.125rem solid rgba(255, 255, 255, 0.05); }
 
+.ks__section--tall .ks__content {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
 .ks__header {
   font-size: 2.5rem;
   margin-bottom: 8rem; }
@@ -75,16 +91,6 @@
           -ms-flex-direction: column;
               flex-direction: column; }
     .g5__r--row {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-    .g5__r--xs-column {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .g5__r--xs-row {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -379,16 +385,6 @@
           -ms-flex-direction: column;
               flex-direction: column; }
     .g7__r--row {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-    .g7__r--xs-column {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .g7__r--xs-row {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -731,16 +727,6 @@
           -ms-flex-direction: column;
               flex-direction: column; }
     .gutterless-grid__r--row {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-    .gutterless-grid__r--xs-column {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .gutterless-grid__r--xs-row {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;

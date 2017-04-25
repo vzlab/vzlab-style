@@ -1,8 +1,9 @@
-mixin section(title)
-    section.ks__section
+mixin section(title, additionalClasses = [])
+    section.ks__section(class=additionalClasses.map(c => "ks__section--" + c))
         .grid
             h1.ks__header #{title}
-            block
+            .ks__content
+                block
     
 doctype html
 html(lang="en")
@@ -43,7 +44,8 @@ html(lang="en")
                         include blocks/_profile
                     +section("Progress bar")
                         include blocks/_progress-bar
-
+                    +section("Jumbotron", [ 'tall' ])
+                        include blocks/_jumbotron
 
 
 

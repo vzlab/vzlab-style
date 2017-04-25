@@ -129,7 +129,7 @@ $buttons: (
     primary: $blue white lighten($blue, 20%),
     secondary: mix(lightgray, $blue) white lighten(mix(lightgray, $blue), 20%),
     yes: yellowgreen white lighten(yellowgreen, 20%),
-    no: salmon white lighten(salmon, 20%),
+    no: tomato white lighten(salmon, 20%),
     danger: crimson white lighten(crimson, 20%),
 ) !default;
 

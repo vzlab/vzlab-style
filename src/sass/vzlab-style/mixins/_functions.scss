@@ -29,3 +29,21 @@
     }
     @return $map;
 }
+
+// Create suffixes from breakpoints map
+@function suffixes($map) {
+    $min: map-min($map);
+    @each $k, $v in $map {
+        $suffix: if($min == $v, "", "--#{$k}");
+        $map: map-merge($map, ($k: $suffix));
+    }
+    @return $map;
+}
+@function infixes($map) {
+    $min: map-min($map);
+    @each $k, $v in $map {
+        $infix: if($min == $v, "-", "--#{$k}");
+        $map: map-merge($map, ($k: $infix));
+    }
+    @return $map;
+}

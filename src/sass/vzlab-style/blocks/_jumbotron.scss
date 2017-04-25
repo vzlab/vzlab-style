@@ -1,0 +1,54 @@
+@import '../mixins/hacks-and-stuff';
+@import '../mixins/responsivity';
+
+$jumbotron-padding: 2rem !default;
+$jumbotron-padding-large: 4rem !default;
+$jumbotron-border: 1px solid $gray !default;
+$jumbotron-background: $gray-dark !default;
+$jumbotron-text: $white !default;
+
+
+.jumbotron {
+    @include clearfix;
+
+    padding: $jumbotron-padding;
+    border: $jumbotron-border;
+    background: $jumbotron-background;
+    color: $jumbotron-text;
+
+    :first-child {
+        margin-top: 0;
+    }
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.jumbotron__title,
+.jumbotron__content,
+.jumbotron__actions {
+    margin-bottom: $jumbotron-padding;
+    margin-top: $jumbotron-padding;
+}
+.jumbotron__title h1 {
+    font-size: 3rem;
+}
+.jumbotron__actions {
+    @extend .text-end;
+}
+
+@include media-breakpoint-up(md) {
+    .jumbotron {
+        padding: $jumbotron-padding-large;
+        font-size: 1.2rem;
+    }
+    .jumbotron__title,
+    .jumbotron__content,
+    .jumbotron__actions {
+        margin-bottom: $jumbotron-padding-large;
+        margin-top: $jumbotron-padding-large;
+    }
+    .jumbotron__title h1 {
+        font-size: 6rem;
+    }
+}

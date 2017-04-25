@@ -28,7 +28,9 @@ gulp.task('pug', () => gulp
         '!src/docs/pug/**/_*.pug',
     ])
     .pipe(plumberNotify())
-    .pipe(pug())
+    .pipe(pug({
+        pretty: true,
+    }))
     .pipe(gulp.dest('docs/'))
     .pipe(livereload())
 )

@@ -36,18 +36,12 @@
         }
 
         // flex directions
-        &--column {
-            flex-direction: column;
-        }
-        &--row {
-            flex-direction: row;
-        }
-        @each $breakpoint in map-keys($breakpoints) {
+        @each $breakpoint, $infix in infixes($breakpoints) {
             @include media-breakpoint-up($breakpoint) {
-                #{"&--#{$breakpoint}-column"} {
+                #{"&#{$infix}-column"} {
                     flex-direction: column;
                 }
-                #{"&--#{$breakpoint}-row"} {
+                #{"&#{$infix}-row"} {
                     flex-direction: row;
                 }
             }

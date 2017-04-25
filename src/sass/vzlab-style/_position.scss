@@ -1,3 +1,27 @@
-.center {
-    text-align: center;
+@import 'mixins/functions';
+@import 'mixins/responsivity';
+
+@each $breakpoint, $suffix in suffixes($breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        #{".text-start" + $suffix} {
+            text-align: left;
+            text-align: start;
+        }
+        #{".text-end" + $suffix} {
+            text-align: right;
+            text-align: end;
+        }
+        #{".text-justify" + $suffix} {
+            text-align: justify;
+        }
+        #{".text-center" + $suffix} {
+            text-align: center;
+        }
+
+        #{".flex-center" + $suffix} {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
