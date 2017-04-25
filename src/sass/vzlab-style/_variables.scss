@@ -243,8 +243,11 @@ $spinner-color: $pink !default;
 // Spinner
 // -----------------------------------------------------------------------------
 
+$jumbotron-margin: 2rem !default;
+$jumbotron-margin-standalone: 4rem 2rem !default;
+$jumbotron-margin-standalone-large: 8rem 4rem !default;
 $jumbotron-padding: 2rem !default;
 $jumbotron-padding-large: 4rem !default;
-$jumbotron-border: 1px solid $gray !default;
+$jumbotron-border: none !default;
 $jumbotron-background: $gray-dark !default;
 $jumbotron-text: $white !default;

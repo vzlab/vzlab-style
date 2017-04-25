@@ -5,16 +5,24 @@
 .jumbotron {
     @include clearfix;
 
+    margin: $jumbotron-margin;
     padding: $jumbotron-padding;
     border: $jumbotron-border;
     background: $jumbotron-background;
     color: $jumbotron-text;
+
+    box-shadow: 0 2rem 5rem rgba($black, .1),
+                0 2rem 1rem -1rem rgba($black, .1);
 
     :first-child {
         margin-top: 0;
     }
     :last-child {
         margin-bottom: 0;
+    }
+
+    &--standalone {
+        margin: $jumbotron-margin-standalone;
     }
 }
 
@@ -36,6 +44,10 @@
     .jumbotron {
         padding: $jumbotron-padding-large;
         font-size: 1.2rem;
+
+        &--standalone {
+            margin: $jumbotron-margin-standalone-large;
+        }
     }
     .jumbotron__title,
     .jumbotron__content,

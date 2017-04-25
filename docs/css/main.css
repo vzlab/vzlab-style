@@ -1761,10 +1761,12 @@ h1, h2, h3, h4, h5 {
       flex-grow: 0; }
 
 .jumbotron {
+  margin: 2rem;
   padding: 2rem;
-  border: 1px solid gray;
+  border: none;
   background: #606060;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1), 0 2rem 1rem -1rem rgba(0, 0, 0, 0.1); }
   .jumbotron::before, .jumbotron::after {
     content: '';
     display: table; }
@@ -1772,6 +1774,8 @@ h1, h2, h3, h4, h5 {
     margin-top: 0; }
   .jumbotron :last-child {
     margin-bottom: 0; }
+  .jumbotron--standalone {
+    margin: 4rem 2rem; }
 
 .jumbotron__title,
 .jumbotron__content,
@@ -1786,6 +1790,8 @@ h1, h2, h3, h4, h5 {
   .jumbotron {
     padding: 4rem;
     font-size: 1.2rem; }
+    .jumbotron--standalone {
+      margin: 8rem 4rem; }
   .jumbotron__title,
   .jumbotron__content,
   .jumbotron__actions {
