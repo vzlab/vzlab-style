@@ -6,15 +6,16 @@
   "author": "Luiz “Felds” Liscia <dev@felds.com.br>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp "
+    "build": "gulp build",
+    "watch": "gulp"
   },
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-livereload": "^3.8.1",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-pug": "^3.3.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
   }
 }

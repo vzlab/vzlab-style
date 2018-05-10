@@ -10,16 +10,15 @@ const plumberNotify = () => plumber({
     errorHandler: notify.onError("Error: <%= error.message %>")
 })
 
-gulp.task('sass', () => gulp
+const taskSass = () => gulp
     .src('src/sass/vzlab-style/**/*.s[ac]ss')
     .pipe(plumberNotify())
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(gulp.dest('docs/css/'))
     .pipe(livereload())
-)
 
-gulp.task('pug', () => gulp
+const taskPug = () => gulp
     .src([
         'src/docs/pug/**/*.pug',
         '!src/docs/pug/**/_*.pug',
@@ -30,11 +29,18 @@ gulp.task('pug', () => gulp
     }))
     .pipe(gulp.dest('docs/'))
     .pipe(livereload())
-)
 
-gulp.task('build', ['sass', 'pug'])
-gulp.task('default', ['build'], () => {
+const taskBuild = (done) => {
+    taskSass()
+    taskPug()
+    done()
+}
+
+gulp.task('build', taskBuild)
+
+gulp.task('default', (done) => {
+    taskBuild(done)
     livereload.listen();
-    gulp.watch('src/sass/vzlab-style/**/*.s[ac]ss', ['sass']);
-    gulp.watch('src/docs/pug/**/*.pug', ['pug']);
+    gulp.watch('src/sass/vzlab-style/**/*.s[ac]ss', taskSass);
+    gulp.watch('src/docs/pug/**/*.pug', taskPug);
 })
