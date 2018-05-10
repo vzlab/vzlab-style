@@ -5,6 +5,9 @@
   "repository": "https://bitbucket.org/vetorzero/vzlab-vzlab-style.git",
   "author": "Luiz “Felds” Liscia <dev@felds.com.br>",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp "
+  },
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -12,7 +15,6 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
-    "gulp-sass": "^3.1.0",
-    "node-sass-globbing": "^0.0.23"
+    "gulp-sass": "^3.1.0"
   }
 }
