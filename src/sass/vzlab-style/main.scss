@@ -59,4 +59,18 @@ h1, h2, h3, h4, h5 {
     cursor: grabbing;
 }
 
-@import 'blocks/*';
+@import 'blocks/actions';
+@import 'blocks/actions-card';
+@import 'blocks/button';
+@import 'blocks/comment';
+@import 'blocks/count-bubble';
+@import 'blocks/flash';
+@import 'blocks/flex';
+@import 'blocks/form';
+@import 'blocks/grid';
+@import 'blocks/jumbotron';
+@import 'blocks/layout';
+@import 'blocks/navbar';
+@import 'blocks/pagination';
+@import 'blocks/profile';
+@import 'blocks/progress-bar';
