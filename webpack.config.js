@@ -9,12 +9,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.styl$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
+          { loader: "stylus-loader" },
         ]
-      }
+      },
     ]
   },
   plugins: [
