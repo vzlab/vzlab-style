@@ -14,6 +14,7 @@ module.exports = {
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
           { loader: "stylus-loader" },
+          { loader: "stylint-loader" },
         ]
       },
     ]

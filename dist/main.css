@@ -1,1 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.container--narrow {
+  max-width: 30rem;
+}
 
