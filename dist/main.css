@@ -7,11 +7,14 @@ html {
 body {
   margin: 0;
 }
-.container {
+.vz-container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 75rem;
 }
-.container--narrow {
+.vz-container--narrow {
   max-width: 30rem;
+}
+.vz-container--fluid {
+  max-width: 100%;
 }
 
