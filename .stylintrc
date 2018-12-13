@@ -1,0 +1,7 @@
+{
+  "colons": "always",
+  "semicolons": "never",
+  "sortOrder": "grouped",
+  "prefixVarsWithDollar": "always",
+  "namingConvention": "BEM"
+}
