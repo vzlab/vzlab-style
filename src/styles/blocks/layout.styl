@@ -1,3 +1,26 @@
 .vz-layout {
   background-color: gold;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas: \
+    "brand breadcrumbs" \
+    "menu content";
+}
+
+.vz-layout__brand {
+  grid-area: brand;
+}
+
+.vz-layout__breadcrumbs {
+  grid-area: breadcrumbs;
+}
+
+.vz-layout__content {
+  grid-area: content;
+}
+
+.vz-layout__menu {
+  grid-area: menu
 }
