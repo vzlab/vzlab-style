@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-
 module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
@@ -14,7 +13,6 @@ module.exports = {
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
           { loader: "stylus-loader" },
-          { loader: "stylint-loader" },
         ]
       },
     ]
