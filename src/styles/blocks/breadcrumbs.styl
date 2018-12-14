@@ -1,0 +1,26 @@
+.vz-breadcrumbs {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-size: 87.5%;
+}
+
+.vz-breadcrumbs__item {
+  display: inline-block;
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    border: none;
+  }
+
+
+  &:not(:last-child):after {
+    content: "/";
+    padding: 0 1rem;
+    opacity: .5;
+  }
+
+  a:focus, a:hover {
+    background: orange;
+  }
+}
