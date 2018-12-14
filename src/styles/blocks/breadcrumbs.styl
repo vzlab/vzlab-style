@@ -1,0 +1,23 @@
+@require 'fonts';
+
+.vz-breadcrumbs {
+  background: linear-gradient(to left, #777, #333);
+  align-items: center;
+  padding: 1em 2em;
+  display: flex;
+}
+
+.vz-breadcrumbs__item {
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.vz-breadcrumbs__item a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.vz-breadcrumbs__item::after {
+  padding: 0 1em;
+  content: '/';
+}
