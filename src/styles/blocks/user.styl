@@ -1,7 +1,8 @@
-@require "../lib/text";
+@require "lib/text";
+@require "variables";
 
 
-$user__avatar-size = 3rem;
+$user__avatar-size ?= 3rem;
 
 
 .vz-user {
@@ -52,7 +53,7 @@ $user__avatar-size = 3rem;
     padding: 1rem 2rem;
 
     &:focus, &:hover {
-      background-color: KHAKI;
+      background-color: $accent;
       color: white;
     }
   }
