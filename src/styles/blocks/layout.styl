@@ -1,22 +1,37 @@
 @require 'fonts';
 
 .vz-layout {
-  grid-template-areas: "aside content";
-  grid-template-columns: 288px auto;
-  font-family: 'Titillium Web';
-  background-color: #f5f5f5;
+  height: 100%;
   display: grid;
-  height: 100vh;
-  width: 100vw;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas: \
+    "brand breadcrumbs" \
+    "menu content";
 }
 
-.vz-layout__aside {
-  background-color: white;
-  grid-area: aside;
+.vz-layout__brand {
+  grid-area: brand;
+  background-color: black;
+  color: white;
+}
+
+.vz-layout__breadcrumbs {
+  grid-area: breadcrumbs;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background: linear-gradient(90deg,#333,#777);
+  color: #f5f5f5;
+  padding: 1rem 2rem;
 }
 
 .vz-layout__content {
   grid-area: content;
-  margin: 0 auto;
-  display: grid;
+  background: whitesmoke;
+  padding: 2rem;
+}
+
+.vz-layout__menu {
+  grid-area: menu
 }

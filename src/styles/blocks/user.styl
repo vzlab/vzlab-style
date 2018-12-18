@@ -1,0 +1,60 @@
+@require "lib/text";
+@require "variables";
+
+
+$user__avatar-size ?= 3rem;
+
+
+.vz-user {
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 2rem;
+    height: 1rem;
+    border-bottom: 1px solid $off-white;
+  }
+}
+
+.vz-user__details {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.vz-user__avatar {
+  margin-right: 1rem;
+
+  img {
+    height: $user__avatar-size;
+    width: $user__avatar-size;
+    border-radius: 999px;
+  }
+}
+
+.vz-user__name {
+  font-weight: 600;
+}
+
+.vz-user__roles {
+  font-size: 87.5%;
+}
+
+.vz-user__actions {
+  margin-top: 2rem;
+
+  a {
+    unlink();
+
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 87.5%;
+    padding: 1rem 2rem;
+
+    &:focus, &:hover {
+      background-color: $accent;
+      color: white;
+    }
+  }
+}
