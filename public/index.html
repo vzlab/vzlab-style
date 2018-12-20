@@ -57,147 +57,168 @@
     </div>
 
     <div class="vz-layout__content">
+      <h1 class="vz-page__header">action card</h1>
 
-      <button class="vz-button vz-button--primary" type="">atualizar</button>
-      <button class="vz-button vz-button--secondary" type="">enviar</button>
+      <div class="vz-action-card">
+        <div class="vz-action-card__title">Action Title</div>
+        <div class="vz-action-card__description">Are you really sure you want to delete this thing?</div>
+        <button class="vz-button vz-button--no" type="">I'm sure! Delete.</button>
+        <button class="vz-button vz-button--primary" type="">Not really...please take me back.</button>
+      </div>
+
+      <div class="vz-action-card">
+        <div class="vz-action-card__title">Action Title</div>
+        <div class="vz-action-card__description">Are you really sure you want to delete this thing?</div>
+        <button class="vz-button vz-button--no vz-button--full-width" type="">I'm sure! Delete.</button>
+        <button class="vz-button vz-button--primary vz-button--full-width" type="">Not really...please take me back.</button>
+      </div>
+
+
+      <h1 class="vz-page__header">form</h1>
+
+      <form action="">
+        <div class="vz-form-group">
+          <label class="vz-form-control vz-form-control--label" for="nome">Nome</label>
+          <input class="vz-form-control vz-form-control--input" placeholder="Lorem Ipsum?" type="text">
+        </div>
+        <div class="vz-form-group">
+          <label class="vz-form-control vz-form-control--label" for="email">Email</label>
+          <input class="vz-form-control vz-form-control--input" placeholder="Lorem Ipsum?" type="email">
+        </div>
+        <button class="vz-button vz-button--primary" type="">atualizar</button>
+        <button class="vz-button vz-button--secondary" type="">enviar</button>
+      </form>
 
       <h1 class="vz-page__header">compact table</h1>
-      <table class="vz-table vz-table--compact">
-        <thead>
-          <tr>
-            <th scope="col" width="20%"></th>
-            <th scope="col" width="20%">Segunda</th>
-            <th scope="col" width="20%">Terça</th>
-            <th scope="col" width="20%">Quarta</th>
-            <th scope="col" width="20%">Quinta</th>
-            <th scope="col" width="20%">Sexta</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Manhã</th>
-            <td>Lorem</td>
-            <td>Ipsum</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">Tarde</th>
-            <td></td>
-            <td></td>
-            <td>Ipsum</td>
-            <td>Lorem</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">Noite</th>
-            <td></td>
-            <td></td>
-            <td>Ipsum</td>
-            <td>Lorem</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
 
-      <h1 class="vz-page__header">standard table</h1>
-      <table class="vz-table">
+      <table class="vz-table vz-table--compact">
           <thead>
             <tr>
-              <th scope="col">Início</th>
-              <th scope="col">Término</th>
-              <th scope="col">Projeto</th>
-              <th scope="col">Anotações</th>
+              <th scope="col">id</th>
+              <th scope="col">First name</th>
+              <th scope="col">Last name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Ip Adress</th>
               <th scope="col" width="1%"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>1</td>
+              <td>Edsel</td>
+              <td>Scapens</td>
+              <td>escapens0@arizona.edu</td>
+              <td>Male</td>
+              <td>175.52.248.77</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>2</td>
+              <td>Griselda</td>
+              <td>Broxholme</td>
+              <td>gbroxholme1@ft.com</td>
+              <td>Female</td>
+              <td>222.77.187.220</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim askljhasdfkjlh asdfkjlh asdfkjlh dfs.</td>
+              <td>3</td>
+              <td>Ericka</td>
+              <td>Von Welldun</td>
+              <td>evonwelldun2@ycombinator.com</td>
+              <td>Female</td>
+              <td>16.75.31.5</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>4</td>
+              <td>Idalina</td>
+              <td>Woodings</td>
+              <td>iwoodings3@slashdot.org</td>
+              <td>Female</td>
+              <td>4.68.12.57</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>5</td>
+              <td>Tibold</td>
+              <td>Pavlovic</td>
+              <td>tpavlovic4@so-net.ne.jp</td>
+              <td>Male</td>
+              <td>151.80.74.162</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>6</td>
+              <td>Huey</td>
+              <td>Bartzen</td>
+              <td>hbartzen5@army.mil</td>
+              <td>Male</td>
+              <td>105.227.23.248</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>7</td>
+              <td>Allan</td>
+              <td>Skirven</td>
+              <td>askirven6@51.la</td>
+              <td>Male</td>
+              <td>168.193.51.156</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>8</td>
+              <td>Dav</td>
+              <td>Slidders</td>
+              <td>dslidders7@si.edu</td>
+              <td>Male</td>
+              <td>191.96.253.223</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
               </td>
             </tr>
             <tr>
-              <td>17/12/2018</td>
-              <td>17/12/2018</td>
-              <td>VZLAB | Jobs internos</td>
-              <td>Veniam eiusmod ad cillum id aliqua adipisicing minim exercitation minim.</td>
+              <td>9</td>
+              <td>Tracey</td>
+              <td>Wasson</td>
+              <td>twasson8@craigslist.org</td>
+              <td>Female</td>
+              <td>8.72.155.44</td>
+              <td class="vz-table__actions">
+                <a href="#">editar</a>
+                <a href="#">excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Papagena</td>
+              <td>Walaron</td>
+              <td>pwalaron9@home.pl</td>
+              <td>Female</td>
+              <td>80.255.67.212</td>
               <td class="vz-table__actions">
                 <a href="#">editar</a>
                 <a href="#">excluir</a>
@@ -205,62 +226,145 @@
             </tr>
           </tbody>
         </table>
-
-      <div class="vz-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo deserunt laudantium temporibus nihil distinctio a quibusdam! Delectus eius nostrum, itaque error in doloremque laborum praesentium enim id deserunt ad!</p>
-    </div>
+      <h1 class="vz-page__header">standard table</h1>
+      <table class="vz-table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Ip Adress</th>
+            <th scope="col" width="1%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Edsel</td>
+            <td>Scapens</td>
+            <td>escapens0@arizona.edu</td>
+            <td>Male</td>
+            <td>175.52.248.77</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Griselda</td>
+            <td>Broxholme</td>
+            <td>gbroxholme1@ft.com</td>
+            <td>Female</td>
+            <td>222.77.187.220</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ericka</td>
+            <td>Von Welldun</td>
+            <td>evonwelldun2@ycombinator.com</td>
+            <td>Female</td>
+            <td>16.75.31.5</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Idalina</td>
+            <td>Woodings</td>
+            <td>iwoodings3@slashdot.org</td>
+            <td>Female</td>
+            <td>4.68.12.57</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Tibold</td>
+            <td>Pavlovic</td>
+            <td>tpavlovic4@so-net.ne.jp</td>
+            <td>Male</td>
+            <td>151.80.74.162</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Huey</td>
+            <td>Bartzen</td>
+            <td>hbartzen5@army.mil</td>
+            <td>Male</td>
+            <td>105.227.23.248</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Allan</td>
+            <td>Skirven</td>
+            <td>askirven6@51.la</td>
+            <td>Male</td>
+            <td>168.193.51.156</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Dav</td>
+            <td>Slidders</td>
+            <td>dslidders7@si.edu</td>
+            <td>Male</td>
+            <td>191.96.253.223</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Tracey</td>
+            <td>Wasson</td>
+            <td>twasson8@craigslist.org</td>
+            <td>Female</td>
+            <td>8.72.155.44</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Papagena</td>
+            <td>Walaron</td>
+            <td>pwalaron9@home.pl</td>
+            <td>Female</td>
+            <td>80.255.67.212</td>
+            <td class="vz-table__actions">
+              <a href="#">editar</a>
+              <a href="#">excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
   </div>
 
+  <!-- <script src="main.js"></script> -->
 
-  <!--
-  <div class="vz-container">
-    Olar
-  </div>
-
-  <div class="vz-layout">
-
-    <div class="vz-layout__aside">
-
-      <div class="vz-logo">
-        <img src="/assets/images/logo_branco.png" alt="">
-      </div>
-
-    </div>
-
-    <div class="vz-layout__container">
-
-      <nav class="vz-breadcrumbs">
-        <div class="vz-breadcrumbs__item">
-          <a href="/">Lorem Ipsum</a>
-        </div>
-        <div class="vz-breadcrumbs__item">
-          <a href="/">Lorem Ipsum</a>
-        </div>
-      </nav>
-
-      <div class="vz-container">
-        Olar
-      </div>
-
-      <div class="vz-container vz-container--narrow">
-        Narrow
-      </div>
-
-      <div class="vz-container vz-container--fluid">
-        Fluid
-      </div>
-    </div>
-  </div>
-
-  <script src="main.js"></script>
-  -->
 </body>
 </html>
