@@ -58,19 +58,56 @@
 
     <div class="vz-layout__content">
 
-      <h1 class="vz-page__header">count bubbles</h1>
+      <h1 class="vz-page__header">flashes</h1>
+      <div class="vz-flash-container">
+        <div class="vz-flash-container__indicator"></div>
+        <div class="vz-flash-container__flash">
+          <p>This is a default flash, it doesn't mean anything.</p>
+        </div>
+      </div>
 
+      <div class="vz-flash-container">
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--ok"></div>
+        <div class="vz-flash-container__flash">
+          <p>Success, my dudes.</p>
+        </div>
+      </div>
+
+      <div class="vz-flash-container">
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--wrong vz-flash-use-icon">
+          <img class="vz-flash-use-icon__img" src="assets/icons/_ionicons_svg_md-alert.svg" alt="">
+        </div>
+        <div class="vz-flash-container__flash">
+          <p>Something went wrong. Action needed.</p>
+        </div>
+      </div>
+
+      <div class="vz-flash-container">
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--warning vz-flash-use-icon">
+          <img class="vz-flash-use-icon__img" src="assets/icons/_ionicons_svg_md-warning.svg" alt="">
+        </div>
+        <div class="vz-flash-container__flash">
+          <p>This is a warning and I'm spelling it out for you.</p>
+        </div>
+      </div>
+
+      <div class="vz-flash-container">
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--info"></div>
+        <div class="vz-flash-container__flash">
+          <p>A scheduled thing will happen this afternoon. No action is needded.</p>
+        </div>
+      </div>
+
+      <h1 class="vz-page__header">count bubbles</h1>
       <div class="">
         <div class="vz-count-bubble vz-count-bubble--faded">0</div>
         <img src="https://picsum.photos/200/180/?random" alt="">
       </div>
-
-      <div class="vz-count-bubbles">
+      <div class="">
         <div class="vz-count-bubble">17</div>
         <img src="https://picsum.photos/200/180/?random" alt="">
       </div>
-
-      <div class="vz-count-bubbles">
+      <div class="">
         <div class="vz-count-bubble">999+</div>
         <img src="https://picsum.photos/200/180/?random" alt="">
       </div>
