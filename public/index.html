@@ -57,6 +57,46 @@
     </div>
 
     <div class="vz-layout__content">
+      <h1 class="vz-page__header">buttons</h1>
+      <div>
+        <h2>Regular</h2>
+        <button class="vz-button">DEFAULT</button>
+        <button class="vz-button vz-button--primary">PRIMARY</button>
+        <button class="vz-button vz-button--secondary">SECONDARY</button>
+        <button class="vz-button vz-button--yes">YES</button>
+        <button class="vz-button vz-button--no">NO</button>
+        <button class="vz-button vz-button--danger">DANGER</button>
+      </div>
+
+      <div>
+        <h2>Small</h2>
+        <button class="vz-button vz-button--small">DEFAULT</button>
+        <button class="vz-button vz-button--primary vz-button--small">PRIMARY</button>
+        <button class="vz-button vz-button--secondary vz-button--small">SECONDARY</button>
+        <button class="vz-button vz-button--yes vz-button--small">YES</button>
+        <button class="vz-button vz-button--no vz-button--small">NO</button>
+        <button class="vz-button vz-button--danger vz-button--small">DANGER</button>
+      </div>
+
+      <div>
+        <h2>Links</h2>
+        <button class="vz-link">DEFAULT</button>
+        <button class="vz-link vz-link--primary">PRIMARY</button>
+        <button class="vz-link vz-link--secondary">SECONDARY</button>
+        <button class="vz-link vz-link--yes">YES</button>
+        <button class="vz-link vz-link--no">NO</button>
+        <button class="vz-link vz-link--danger">DANGER</button>
+      </div>
+
+      <div>
+        <h2>Block</h2>
+        <button class="vz-button vz-button--full-width">DEFAULT</button>
+        <button class="vz-button vz-button--primary vz-button--full-width">PRIMARY</button>
+        <button class="vz-button vz-button--secondary vz-button--full-width">SECONDARY</button>
+        <button class="vz-button vz-button--yes vz-button--full-width">YES</button>
+        <button class="vz-button vz-button--no vz-button--full-width">NO</button>
+        <button class="vz-button vz-button--danger vz-button--full-width">DANGER</button>
+      </div>
 
       <h1 class="vz-page__header">flashes</h1>
       <div class="vz-flash-container">
@@ -67,7 +107,9 @@
       </div>
 
       <div class="vz-flash-container">
-        <div class="vz-flash-container__indicator vz-flash-container__indicator--ok"></div>
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--ok vz-flash-use-icon">
+            <img class="vz-flash-use-icon__img" src="assets/icons/_ionicons_svg_md-checkmark-circle.svg" alt="">
+        </div>
         <div class="vz-flash-container__flash">
           <p>Success, my dudes.</p>
         </div>
@@ -92,7 +134,9 @@
       </div>
 
       <div class="vz-flash-container">
-        <div class="vz-flash-container__indicator vz-flash-container__indicator--info"></div>
+        <div class="vz-flash-container__indicator vz-flash-container__indicator--info vz-flash-use-icon">
+          <img class="vz-flash-use-icon__img" src="assets/icons/_ionicons_svg_md-information-circle.svg" alt="">
+        </div>
         <div class="vz-flash-container__flash">
           <p>A scheduled thing will happen this afternoon. No action is needded.</p>
         </div>

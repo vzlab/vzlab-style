@@ -1,6 +1,8 @@
 .vz-button {
+  transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
   text-transform: capitalize;
+  color: rgba(0,0,0,0.6);
   display: inline-block;
   padding: .5rem 3rem;
   white-space: nowrap;
@@ -9,12 +11,15 @@
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
-  color: $white;
+}
+
+.vz-button--small {
+  padding: .3rem 1.5rem;
 }
 
 .vz-button--primary {
-  transition: all 0.2s ease-in-out;
-  background-color: #007bff;
+  background-color: $primary;
+  color: $white;
 }
 
 .vz-button--primary:hover {
@@ -22,8 +27,8 @@
 }
 
 .vz-button--secondary {
-  transition: all 0.2s ease-in-out;
   background-color: rgba(black, 0.6);
+  color: $white;
 }
 
 .vz-button--secondary:hover {
@@ -31,20 +36,56 @@
 }
 
 .vz-button--no {
-  background-color $accent;
-}
-
-.vz-button--no {
-  transition: all 0.2s ease-in-out;
-  background-color $accent;
+  background-color $no;
+  color: $white;
 }
 
 .vz-button--no:hover {
-  background-color #d86b43
+  background-color #d66d47;
+}
+
+.vz-button--yes {
+  background-color $yes;
+  color: $white;
+}
+
+.vz-button--yes:hover {
+  background-color #079c73;
+}
+
+.vz-button--danger {
+  background-color $danger;
+  color: $white;
+}
+
+.vz-button--danger:hover {
+  background-color #c31334;
 }
 
 .vz-button--full-width {
   margin-bottom: .5rem;
   display: block;
   width: 100%;
+}
+
+.vz-link {
+  @extends .vz-button;
+  background-color: transparent;
+}
+
+.vz-link--primary {
+ color: $primary;
+}
+.vz-link--secondary {
+  color: rgba(black, 0.6);
+}
+.vz-link--yes {
+  color: $yes;
+}
+.vz-link--no {
+  color: $no;
+}
+
+.vz-link--danger {
+  color: $danger;
 }
