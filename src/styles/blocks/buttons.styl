@@ -17,6 +17,31 @@
   padding: .3rem 1.5rem;
 }
 
+.vz-button--micro {
+  font-size: .9rem;
+  padding: 0;
+}
+
+.vz-button--square {
+  padding: .5rem .8rem;
+}
+
+.vz-button--close {
+  background-color rgba(black, .6);
+  color: $white;
+}
+
+.vz-button--close:hover {
+  background-color rgba(black, .8);
+}
+
+.vz-button--full-width {
+  margin-bottom: .5rem;
+  display: block;
+  width: 100%;
+}
+
+//Regular & small buttons
 .vz-button--primary {
   background-color: $primary;
   color: $white;
@@ -62,12 +87,7 @@
   background-color #c31334;
 }
 
-.vz-button--full-width {
-  margin-bottom: .5rem;
-  display: block;
-  width: 100%;
-}
-
+// Links
 .vz-link {
   @extends .vz-button;
   background-color: transparent;
