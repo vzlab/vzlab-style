@@ -27,12 +27,12 @@
 }
 
 .vz-button--close {
-  background-color rgba(black, .6);
+  background-color: rgba(black, .6);
   color: $white;
 }
 
 .vz-button--close:hover {
-  background-color rgba(black, .8);
+  background-color: rgba(black, .8);
 }
 
 .vz-button--full-width {
@@ -48,7 +48,7 @@
 }
 
 .vz-button--primary:hover {
-  background-color #0054af;
+  background-color: #0054af;
 }
 
 .vz-button--secondary {
@@ -61,35 +61,35 @@
 }
 
 .vz-button--no {
-  background-color $no;
+  background-color: $no;
   color: $white;
 }
 
 .vz-button--no:hover {
-  background-color #d66d47;
+  background-color: #d66d47;
 }
 
 .vz-button--yes {
-  background-color $yes;
+  background-color: $yes;
   color: $white;
 }
 
 .vz-button--yes:hover {
-  background-color #079c73;
+  background-color: #079c73;
 }
 
 .vz-button--danger {
-  background-color $danger;
+  background-color: $danger;
   color: $white;
 }
 
 .vz-button--danger:hover {
-  background-color #c31334;
+  background-color: #c31334;
 }
 
 // Links
 .vz-link {
-  @extends .vz-button;
+  // @extends .vz-button;
   background-color: transparent;
 }
 

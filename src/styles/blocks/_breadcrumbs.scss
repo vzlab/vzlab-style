@@ -1,16 +1,12 @@
-@require "lib/text";
-@require "variables";
-
-
 .vz-breadcrumbs {
-  wide-text();
+  @extend .wide-text;
 }
 
 .vz-breadcrumbs__item {
   display: inline-block;
 
   a {
-    unlink();
+    @extend .unlink;
 
     &:focus, &:hover {
       background: $accent;

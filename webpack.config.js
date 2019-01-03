@@ -3,16 +3,17 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, '/public/'),
   },
   module: {
     rules: [
       {
-        test: /\.styl$/,
+        test: /\.scss$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: "css-loader" },
-          { loader: "stylus-loader" },
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
         ]
       },
     ]

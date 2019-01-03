@@ -1,8 +1,6 @@
-@require '../lib/text.styl';
-
 .vz-action-card {
   border: 1px solid rgba(0, 0, 0, 0.06);
-  background-color #fff;
+  background-color: #fff;
   padding: 2rem 2rem;
   margin: 0 auto 2rem;
   max-width: 50rem;
@@ -10,7 +8,7 @@
 }
 
 .vz-action-card__title {
-  wide-text();
+  @extend .wide-text;
   margin-bottom: 1rem;
   font-style: italic;
   font-size: 1.5rem;
