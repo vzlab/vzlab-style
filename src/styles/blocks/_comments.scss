@@ -42,12 +42,23 @@
 }
 
 .vz-comment--is-active {
-  background-image: linear-gradient(to right, $off-white, $white);
-  // background-color: $off-white;
-  // border: 1px solid rgba(black, 0.1);
+  background-color: $off-white;
 }
 
-.vz-comment--is-active::before {
-  // border-bottom-color: $off-white;
-  // border-left-color: $off-white;
+.vz-comment--is-active-right {
+  @extend .vz-comment--is-active;
+}
+
+.vz-comment--is-active-left {
+  @extend .vz-comment--is-active;
+}
+
+.vz-comment--is-active-right::before {
+  border-bottom-color: $off-white;
+  border-left-color: $off-white;
+}
+
+.vz-comment--is-active-left::before {
+  border-bottom-color: $off-white;
+  border-right-color: $off-white;
 }
