@@ -21,14 +21,16 @@
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^2.0",
-    "mini-css-extract-plugin": "^0.5",
+    "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23",
     "stylus": "^0.54",
     "stylus-loader": "^3.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.27",
     "webpack-cli": "^3.1",
-    "webpack-dev-server": "^3.1"
+    "webpack-dev-server": "^3.1.14"
   }
 }
