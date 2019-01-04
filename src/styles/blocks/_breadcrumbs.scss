@@ -6,7 +6,7 @@
   display: inline-block;
 
   a {
-    @extend .unlink;
+    @include unlink;
 
     &:focus, &:hover {
       background: $accent;

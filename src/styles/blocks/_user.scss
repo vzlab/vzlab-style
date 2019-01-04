@@ -37,7 +37,7 @@
   margin-top: 2rem;
 
   a {
-    @extend .unlink;
+    @include unlink;
 
     display: block;
     text-align: center;
