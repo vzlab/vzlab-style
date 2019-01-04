@@ -1,5 +1,5 @@
 .vz-breadcrumbs {
-  @extend .wide-text;
+  @include wide-text;
 }
 
 .vz-breadcrumbs__item {

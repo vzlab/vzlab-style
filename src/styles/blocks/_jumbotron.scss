@@ -6,7 +6,7 @@
 }
 
 .vz-jumbotron__title {
-  @extend .wide-text;
+  @include wide-text;
   margin-bottom: 3rem;
   font-style: italic;
   font-weight: 500;

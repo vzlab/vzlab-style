@@ -1,17 +1,17 @@
-.unlink {
+@mixin unlink {
   color: inherit;
   text-decoration: inherit;
   border: none;
 }
 
-.wide-text {
+@mixin wide-text {
   text-transform: uppercase;
   letter-spacing: .5rem;
   font-size: 87.5%;
 }
 
 .vz-page__header {
-  @extend .wide-text;
+  @include wide-text;
   margin-bottom: 3rem;
   font-style: italic;
   font-size: 2.5rem;

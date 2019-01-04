@@ -8,7 +8,7 @@
 }
 
 .vz-action-card__title {
-  @extend .wide-text;
+  @include wide-text;
   margin-bottom: 1rem;
   font-style: italic;
   font-size: 1.5rem;
