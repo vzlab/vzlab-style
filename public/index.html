@@ -228,69 +228,81 @@
 
       <h1 class="vz-page__header">form</h1>
       <form action="">
-        <div class="vz-form-group">
-          <label class="vz-form-control vz-form-control--label" for="nome">Regular field</label>
-          <input class="vz-form-control vz-form-control--input" placeholder="Placeholder" type="text">
-        </div>
-        <div class="vz-form-group">
-          <label class="vz-form-control vz-form-control--label" for="email">Validation error</label>
-          <input class="vz-form-control vz-form-control--input is-invalid" placeholder="Placeholder" type="text">
-          <div class="vz-form-control__error-msg">error message.</div>
-        </div>
-        <div class="vz-form-group">
-          <label class="vz-form-control vz-form-control--label" for="">Select</label>
-          <select class="vz-form-control vz-form-control--select" name="" id="">
-            <option value="0" disabled>Unselectable</option>
-            <option value="1">Selectable 1</option>
-            <option value="2">Selectable 2</option>
-          </select>
-        </div>
-        <div class="vz-form-group">
-          <label for="">Checkbox</label>
-          <div class="vz-form-control__checker">
-            <label for="">
-              <input type="checkbox">
-              Heyo there.
-            </label>
+        <div class="vz-form-group vz-form-group--valid">
+          <label class="vz-form-group__label" for="nome">Regular field</label>
+          <div class="vz-form-group__control">
+            <input class="vz-form-input" placeholder="Placeholder" type="text">
           </div>
-          <div class="vz-form-control__checker">
-            <label for="">
-              <input type="checkbox">
-              Heyo there.
-            </label>
+          <p class="vz-form-group__feedback">success message.</p>
+        </div>
+        <div class="vz-form-group vz-form-group--invalid">
+          <label class="vz-form-group__label" for="email">Validation error</label>
+          <div class="vz-form-group__control">
+            <input class="vz-form-input" placeholder="Placeholder" type="text">
           </div>
-          <div class="vz-form-control__checker">
-            <label for="">
-              <input type="checkbox" disabled>
-              Heyo there I'm disabled.
-            </label>
+          <p class="vz-form-group__feedback">error message.</p>
+          <p class="vz-form-group__help">*Do not use obvious words like your name, your town or date of birth as your password.</p>
+        </div>
+        <div class="vz-form-group">
+          <label class="vz-form-group__label" for="email">Date</label>
+          <div class="vz-form-group__control">
+            <input class="vz-form-input" placeholder="Placeholder" type="date">
           </div>
         </div>
         <div class="vz-form-group">
-          <label for="">Select One</label>
-          <div class="vz-form-control__radio">
-            <label for="">
-              <input type="radio">
-              Select me.
-            </label>
+          <label class="vz-form-group__label" for="">Select</label>
+          <div class="vz-form-group-control">
+            <select class="vz-form-input--select" name="select">
+              <option value="0" disabled>Unselectable</option>
+              <option value="1">Selectable 1</option>
+              <option value="2">Selectable 2</option>
+            </select>
           </div>
-          <div class="vz-form-control__radio">
-            <label for="">
-              <input type="radio">
-              Select me.
-            </label>
+        </div>
+        <div class="vz-form-group">
+          <label>Checkbox</label>
+          <div class="vz-form-group__control">
+            <div class="vz-form-check">
+              <label>
+                <input type="checkbox">
+                Heyo there.
+              </label>
+            </div>
+            <div class="vz-form-check">
+              <label>
+                <input type="checkbox">
+                Heyo there.
+              </label>
+            </div>
+            <div class="vz-form-check">
+              <label>
+                <input type="checkbox" disabled>
+                Heyo there I'm disabled.
+              </label>
+            </div>
           </div>
-          <div class="vz-form-control__radio">
-            <label for="">
-              <input type="radio">
-              Select me.
-            </label>
-          </div>
-          <div class="vz-form-control__radio">
-            <label for="">
-              <input type="radio" disabled>
-              Select me. Not.
-            </label>
+        </div>
+        <div class="vz-form-group">
+          <label>Select</label>
+          <div class="vz-form-group__control">
+            <div class="vz-form-check vz-form-check--radio">
+              <label>
+                <input type="radio" id="radio-01" value="1">
+                Select me.
+              </label>
+            </div>
+            <div class="vz-form-check vz-form-check--radio">
+              <label>
+                <input type="radio" id="radio-02" value="2">
+                Select me.
+              </label>
+            </div>
+            <div class="vz-form-check vz-form-check--radio">
+              <label>
+                <input type="radio" id="radio-03" value="3" disabled>
+                Select me. Not.
+              </label>
+            </div>
           </div>
         </div>
 

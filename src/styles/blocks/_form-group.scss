@@ -1,0 +1,44 @@
+.vz-form-group {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.vz-form-group--invalid {
+  input {
+    border: 1px solid $accent;
+  }
+
+  p {
+    color: $accent;
+    margin: 0;
+  }
+}
+
+.vz-form-group--valid {
+  input {
+    border: 1px solid $yes;
+  }
+
+  p {
+    margin: 0;
+    color: $yes;
+  }
+}
+
+.vz-form-group__control {
+  background-color: transparent;
+  display: block;
+}
+
+.vz-form-group__label {
+  margin-bottom: .25rem;
+}
+
+.vz-form-group__feedback {
+  font-size: 87.5%;
+}
+
+.vz-form-group__help {
+  color: rgba(0, 0, 0, 0.6) !important;
+}

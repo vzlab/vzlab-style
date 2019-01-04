@@ -1,0 +1,33 @@
+.vz-form-input {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  padding: .75rem;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: $black;
+}
+
+input:focus {
+  background-color: $white;
+  border-color: $off-white;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(123, 123, 123,.25);
+}
+
+.vz-form-input--select {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: $white;
+  font-size: 1rem;
+  height: 44px;
+  width: 100%;
+}
+
+.vz-form-input--select:focus {
+  box-shadow: 0 0 0 0.15rem rgba(123, 123, 123,.25);
+  background-color: $white;
+  border-color: $off-white;
+  outline: 0;
+}
