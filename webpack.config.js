@@ -3,6 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   devServer: {
@@ -61,5 +62,6 @@ module.exports = {
       template: './public/index.html',
       filename: 'index.html',
     }),
+    new CleanWebpackPlugin('dist', {}),
   ]
 }
