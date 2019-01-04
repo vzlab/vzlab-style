@@ -1,0 +1,36 @@
+.vz-pagination {
+  margin: 2rem 0;
+}
+
+.vz-pagination__content {
+  display: flex;
+  justify-content: center;
+}
+
+.vz-pagination__button {
+  @include unlink;
+  // background-color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  margin: 0 .25rem;
+  color: $black;
+}
+
+.vz-pagination__button--active {
+  background-color: $primary;
+}
+
+.vz-pagination__button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.vz-pagination__button--disabled {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: not-allowed;
+}
+
+.vz-pagination__button--disabled:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
