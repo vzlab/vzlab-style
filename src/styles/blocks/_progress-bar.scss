@@ -2,11 +2,14 @@
   background-color: $yes;
   height: 0.8rem;
   width: 100%;
-  animation: infinite-progress-bar 2.5s infinite;
 }
 
 .vz-progress-bar--loading {
   animation: loading-progress-bar 5s infinite;
+}
+
+.vz-progress-bar--download {
+  animation: infinite-progress-bar 2.5s infinite;
 }
 
 @keyframes infinite-progress-bar {
