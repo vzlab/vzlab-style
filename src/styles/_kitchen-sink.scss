@@ -5,10 +5,21 @@
 .ks-section__container {
   display: inline-block;
   width: fit-content;
-  margin-right: 1rem;
+  margin-right: 2rem;
   overflow: hidden;
 
   img {
     display: block;
   }
+
+  p {
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
+
+.ks-code {
+  background-color: $white;
+  padding: .5rem;
 }
