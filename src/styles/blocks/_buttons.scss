@@ -3,6 +3,7 @@
   border: 1px solid transparent;
   text-transform: capitalize;
   color: rgba(0,0,0,0.6);
+  background-color: $white;
   display: inline-block;
   padding: .5rem 3rem;
   white-space: nowrap;
@@ -11,6 +12,10 @@
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.vz-button:hover {
+  background-color: rgba(0, 0, 0, .08);
 }
 
 .vz-button--small {
