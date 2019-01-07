@@ -25,6 +25,14 @@ input:focus {
   width: 100%;
 }
 
+.vz-form-input--select[multiple] {
+  height: auto;
+
+  option {
+    padding: .25rem 0;
+  }
+}
+
 .vz-form-input--select:focus {
   box-shadow: 0 0 0 0.15rem rgba(123, 123, 123,.25);
   background-color: $white;
