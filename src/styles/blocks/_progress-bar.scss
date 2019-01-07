@@ -1,0 +1,48 @@
+.vz-progress-bar {
+  background-color: $yes;
+  height: 0.8rem;
+  width: 100%;
+  animation: infinite-progress-bar 2.5s infinite;
+}
+
+.vz-progress-bar--loading {
+  animation: loading-progress-bar 2.5s infinite;
+}
+
+@keyframes infinite-progress-bar {
+  from {
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+  }
+  50% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    -webkit-transform: translateX(50%) scaleX(0);
+    transform: translateX(50%) scaleX(0);
+  }
+}
+
+@keyframes loading-progress-bar {
+  from {
+    -webkit-transform: translateX(-40%) scaleX(0);
+    transform: translateX(-40%) scaleX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-60%) scaleX(0);
+    transform: translateX(-60%) scaleX(0);
+  }
+  60% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  25% {
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+  }
+  to {
+    -webkit-transform: translateX(-40%) scaleX(0);
+    transform: translateX(-40%) scaleX(0);
+  }
+}
