@@ -2,6 +2,14 @@
   background-color: $white;
   margin: 1rem 1rem 2rem;
   position: relative;
+  cursor: pointer;
+}
+
+.vz-comment:hover {
+  .vz-comment__actions {
+    opacity: 1;
+    top: 100%;
+  }
 }
 
 .vz-comment--tail-left::before, .vz-comment--tail-right::before {
@@ -34,15 +42,18 @@
 }
 
 .vz-comment__actions {
+  transition: all 0.2s ease-in-out;
   position: absolute;
   font-size: 90%;
+  opacity: 0;
   padding: 0;
-  top: 100%;
+  top: 95%;
   right: 0;
 }
 
 .vz-comment--is-active {
-  background-color: $off-white;
+  background-color: $yes !important;
+  color: $white;
 }
 
 .vz-comment--is-active-right {
@@ -54,11 +65,31 @@
 }
 
 .vz-comment--is-active-right::before {
-  border-bottom-color: $off-white;
-  border-left-color: $off-white;
+  border-bottom-color: $yes;
+  border-left-color: $yes;
 }
 
 .vz-comment--is-active-left::before {
-  border-bottom-color: $off-white;
-  border-right-color: $off-white;
+  border-bottom-color: $yes;
+  border-right-color: $yes;
+}
+
+
+//No tail options
+.vz-comment--notail {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: $white;
+  margin: 1rem 1rem 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.vz-comment--notail:nth-child(even) {
+  background-color: $off-white;
+  text-align: right;
+}
+
+.vz-comment--notail:nth-child(odd) {
+  background-color: $white;
+  text-align: left;
 }
