@@ -11,3 +11,13 @@ body {
   margin: 0;
   height: 100%;
 }
+
+body::-moz-selection {
+  color: $white;
+  background: $black;
+}
+
+::selection {
+  color: $white;
+  background: $black;
+}
