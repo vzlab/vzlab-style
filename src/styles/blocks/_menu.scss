@@ -1,0 +1,50 @@
+.vz-menu {
+}
+
+.vz-menu__item {
+  @include unlink;
+  transition: all .25s ease-in-out;
+  text-transform: uppercase;
+  background-color: $white;
+  padding: 1rem 2rem;
+  color: $black;
+  display: flex;
+  border: none;
+
+  p {
+    margin: 0;
+  }
+}
+
+.vz-menu__item:hover {
+  background-color: whitesmoke;
+}
+
+.vz-menu__item--active {
+  background-color: whitesmoke;
+  border-left: 2px solid $black;
+  color: $black;
+}
+
+.vz-menu__item-icon {
+  position: relative;
+  margin-right: 2rem;
+  top: 2px;
+}
+
+.vz-menu__item-submenu {
+  padding: 0 0 .5rem 6rem;
+
+  a {
+    @include unlink;
+    transition: all .25s ease-in-out;
+    text-transform: uppercase;
+    padding: .25rem 0;
+    font-size: 87.5%;
+    display: block;
+  }
+
+  a:hover {
+    color: $primary
+  }
+}
