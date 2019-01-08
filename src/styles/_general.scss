@@ -14,10 +14,10 @@ body {
 
 body::-moz-selection {
   color: $white;
-  background: $black;
+  background-color: $black;
 }
 
 ::selection {
   color: $white;
-  background: $black;
+  background-color: $black;
 }
