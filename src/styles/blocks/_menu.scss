@@ -1,4 +1,5 @@
 .vz-menu {
+  background-color: transparent;
 }
 
 .vz-menu__item {
@@ -20,6 +21,37 @@
   background-color: whitesmoke;
 }
 
+.vz-menu__item--collapsable {
+  .vz-menu__item-submenu {
+    // transition: all .1s ease-in-out;
+    padding: 0 0 .5rem 6rem;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    a {
+      @include unlink;
+      transition: all .25s ease-in-out;
+      text-transform: uppercase;
+      padding: .25rem 0;
+      font-size: 87.5%;
+      display: block;
+    }
+
+    a:hover {
+      color: $primary
+    }
+  }
+}
+
+.vz-menu__item--collapsable:hover {
+  .vz-menu__item-submenu {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+  }
+}
+
 .vz-menu__item--active {
   background-color: whitesmoke;
   border-left: 2px solid $black;
@@ -30,21 +62,4 @@
   position: relative;
   margin-right: 2rem;
   top: 2px;
-}
-
-.vz-menu__item-submenu {
-  padding: 0 0 .5rem 6rem;
-
-  a {
-    @include unlink;
-    transition: all .25s ease-in-out;
-    text-transform: uppercase;
-    padding: .25rem 0;
-    font-size: 87.5%;
-    display: block;
-  }
-
-  a:hover {
-    color: $primary
-  }
 }
