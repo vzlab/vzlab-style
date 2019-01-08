@@ -23,11 +23,10 @@
 
 .vz-menu__item--collapsable {
   .vz-menu__item-submenu {
-    // transition: all .1s ease-in-out;
+    // transition: max-height .5s ease-in-out;
     padding: 0 0 .5rem 6rem;
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
+    overflow: hidden;
+    max-height: 0;
 
     a {
       @include unlink;
@@ -42,15 +41,27 @@
       color: $primary
     }
   }
-}
 
-.vz-menu__item--collapsable:hover {
-  .vz-menu__item-submenu {
-    visibility: visible;
-    height: auto;
-    opacity: 1;
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked ~ .vz-menu__item-submenu {
+    max-height: 50rem;
   }
 }
+
+// .vz-menu__item--collapsable:hover {
+//   .vz-menu__item-submenu {
+//     visibility: visible;
+//     height: auto;
+//     opacity: 1;
+//   }
+// }
 
 .vz-menu__item--active {
   background-color: whitesmoke;
