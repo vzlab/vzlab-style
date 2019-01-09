@@ -6,7 +6,7 @@
 .vz-flash__indicator {
   background-color: rgba(black, .6);
   margin-right: 5px;
-  height: 59px;
+  height: auto;
   width: 10px;
 }
 
@@ -15,8 +15,8 @@
   width: 59px;
 }
 
-.icon {
-  max-width: 55%;
+.vz-flash__indicator-icon {
+  max-width: 45%;
   margin: 0 auto;
   color: $white;
   height: auto;
