@@ -1,5 +1,5 @@
 .vz-form-input {
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 1rem;
   padding: .75rem;
   width: 100%;
@@ -18,7 +18,7 @@ input:focus {
 }
 
 .vz-form-input--select {
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $white;
   font-size: 1rem;
   height: 44px;

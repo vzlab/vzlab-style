@@ -1,54 +1,75 @@
-.vz-flash-container {
+.vz-flash {
   margin-bottom: 1rem;
   display: flex;
 }
 
-.vz-flash-container__indicator {
+.vz-flash__indicator {
   background-color: rgba(black, .6);
   margin-right: 5px;
-  height: 30px;
+  height: 59px;
   width: 10px;
 }
 
-.vz-flash-use-icon {
+.vz-flash__indicator--use-icon {
   display: flex;
-  width: 30px;
+  width: 59px;
 }
 
-.vz-flash-use-icon__img {
-  max-width: 75%;
+.icon {
+  max-width: 60%;
   margin: 0 auto;
   color: $white;
   height: auto;
   width: 100%;
 }
 
-.vz-flash-container__flash {
-  border: 1px solid rgba(black, 0.05);
+.vz-flash__content {
+  border-right: 4px solid rgba(black, .6);
   background-color: $white;
   align-items: center;
-  padding-left: 1rem;
-  display: flex;
-  height: 30px;
-  width: 100%;
+  padding: 0 1rem;
+  height: auto;
 
-  p {
-    margin: 0;
+  a {
+    transition: color 0.25s ease-in-out;
+    color: $primary;
+  }
+
+  a:hover {
+    color: #0054af;
   }
 }
 
-.vz-flash-container__indicator--ok {
+//Content colors
+.vz-flash__content--ok {
+  border-right: 4px solid $yes;
+}
+
+.vz-flash__content--wrong {
+  border-right: 4px solid $no;
+}
+
+.vz-flash__content--warning {
+  border-right: 4px solid $warning;
+}
+
+.vz-flash__content--info {
+  border-right: 4px solid $info;
+}
+
+.vz-flash__indicator--ok {
   background-color: $yes;
 }
 
-.vz-flash-container__indicator--wrong {
+// Indicators colors
+.vz-flash__indicator--wrong {
   background-color: $no;
 }
 
-.vz-flash-container__indicator--warning {
+.vz-flash__indicator--warning {
   background-color: $warning;
 }
 
-.vz-flash-container__indicator--info {
+.vz-flash__indicator--info {
   background-color: $info;
 }

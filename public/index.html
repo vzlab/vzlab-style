@@ -249,47 +249,48 @@
 
       <h1 class="vz-page__header">flashes</h1>
       <section class="ks-section">
-        <div class="vz-flash-container">
-          <div class="vz-flash-container__indicator"></div>
-          <div class="vz-flash-container__flash">
+
+        <div class="vz-flash">
+          <div class="vz-flash__indicator"></div>
+          <div class="vz-flash__content">
             <p>This is a default flash, it doesn't mean anything.</p>
           </div>
         </div>
 
-        <div class="vz-flash-container">
-          <div class="vz-flash-container__indicator vz-flash-container__indicator--ok vz-flash-use-icon">
-              <ion-icon name="checkmark-circle" class="vz-flash-use-icon__img"></ion-icon>
-              <!-- <img class="vz-flash-use-icon__img" src="assets/icons/_ionicons_svg_md-checkmark-circle.svg" alt=""> -->
+        <div class="vz-flash">
+          <div class="vz-flash__indicator vz-flash__indicator--ok vz-flash__indicator--use-icon">
+              <ion-icon name="checkmark-circle" class="icon"></ion-icon>
           </div>
-          <div class="vz-flash-container__flash">
+          <div class="vz-flash__content vz-flash__content--ok">
             <p>Success, my dudes.</p>
           </div>
         </div>
 
-        <div class="vz-flash-container">
-          <div class="vz-flash-container__indicator vz-flash-container__indicator--wrong vz-flash-use-icon">
-            <ion-icon name="alert" class="vz-flash-use-icon__img"></ion-icon>
+        <div class="vz-flash">
+          <div class="vz-flash__indicator vz-flash__indicator--wrong vz-flash__indicator--use-icon">
+            <ion-icon name="alert" class="icon"></ion-icon>
           </div>
-          <div class="vz-flash-container__flash">
+          <div class="vz-flash__content vz-flash__content--wrong">
             <p>Something went wrong. Action needed.</p>
           </div>
         </div>
 
-        <div class="vz-flash-container">
-          <div class="vz-flash-container__indicator vz-flash-container__indicator--warning vz-flash-use-icon">
-            <ion-icon name="warning" class="vz-flash-use-icon__img"></ion-icon>
+        <div class="vz-flash">
+          <div class="vz-flash__indicator vz-flash__indicator--warning vz-flash__indicator--use-icon">
+            <ion-icon name="warning" class="icon"></ion-icon>
           </div>
-          <div class="vz-flash-container__flash">
+          <div class="vz-flash__content vz-flash__content--warning">
             <p>This is a warning and I'm spelling it out for you.</p>
           </div>
         </div>
 
-        <div class="vz-flash-container">
-          <div class="vz-flash-container__indicator vz-flash-container__indicator--info vz-flash-use-icon">
-            <ion-icon name="information-circle" class="vz-flash-use-icon__img"></ion-icon>
+        <div class="vz-flash">
+          <div class="vz-flash__indicator vz-flash__indicator--info vz-flash__indicator--use-icon">
+            <ion-icon name="information-circle" class="icon"></ion-icon>
           </div>
-          <div class="vz-flash-container__flash">
+          <div class="vz-flash__content vz-flash__content--info">
             <p>A scheduled thing will happen this afternoon. No action is needded.</p>
+            <p>Click <a href="#">here</a> to see your schedule.</p>
           </div>
         </div>
       </section>
