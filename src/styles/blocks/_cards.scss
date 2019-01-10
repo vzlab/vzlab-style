@@ -1,38 +1,60 @@
 .vz-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $white;
-  padding: .5rem 2rem;
-  // max-width: 25rem;
-  cursor: pointer;
   color: $black;
 }
 
-.vz-card:hover {
-  -webkit-box-shadow: 0px 10px 0px 0px $yes;
-  -moz-box-shadow: 0px 10px 0px 0px $yes;
-  box-shadow: 0px 5px 0px 0px $yes;
+// .vz-card:hover {
+//   -webkit-box-shadow: 0px 10px 0px 0px $yes;
+//   -moz-box-shadow: 0px 10px 0px 0px $yes;
+//   box-shadow: 0px 5px 0px 0px $yes;
+// }
+
+.vz-card__header {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.vz-card__title {
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 120%;
+}
+
+.vz-card__description {
+  font-size: 87.5%;
+}
+
+.vz-card__image {
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
 }
 
 .vz-card__content {
-  margin-bottom: 2rem;
+  padding: 1rem;
+
+  dl {
+    margin-top: 0;
+  }
 }
 
-.vz-card__content-title {
-  line-height: 3rem;
-  font-weight: 600;
-  font-size: 1rem;
-  // color: $accent;
+.vz-card__footer {
+  // background-color: $yes;
+  display: flex;
+  padding: 1rem;
+  flex-flow: row-reverse;
+
+  button {
+    margin: 0 .25rem;
+  }
 }
 
-.vz-card__content-description {
-  font-size: .8rem;
-  font-weight: 600;
-}
-
-.vz-card__content-separator {
+.vz-card__separator {
   // background-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba($color: #07be8c, $alpha: 0.2);
-  margin: 1rem 0;
-  height: 1px;
-  width: 70%;
+  background-color: rgba($color: $accent, $alpha: 1);
+  margin: 1rem 0 1rem 1rem;
+  height: 4px;
+  width: 31%;
 }

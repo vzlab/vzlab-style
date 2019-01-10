@@ -21,3 +21,15 @@ body::-moz-selection {
   color: $white;
   background-color: $black;
 }
+
+dl {}
+
+dt {
+  font-size: 87.5%;
+  font-weight: 600;
+}
+
+dd {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 1rem .5rem;
+}
