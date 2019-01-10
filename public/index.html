@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600">
   <link rel="stylesheet" type="text/css" href="main.css">
-
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css">
   <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </head>
 <body>
@@ -122,90 +122,97 @@
       </div> -->
       <h1 class="vz-page__header">comments</h1>
       <section class="ks-section">
-        <div class="vz-container--narrow">
-          <h3>Tail option</h3>
-          <div class="vz-comment vz-comment--tail-left">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
+        <div class="vz-container">
+          <div class="row">
+              <div class="col-xs-6">
+                <h3>Tail</h3>
+                <div class="vz-comment vz-comment--tail-left">
+                  <div class="vz-comment__body">
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="vz-comment__actions">
+                    <div class="vz-link vz-button--micro">remove comment</div>
+                  </div>
+                </div>
+                <div class="vz-comment vz-comment--tail-left">
+                  <div class="vz-comment__body">
+                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="vz-comment__actions">
+                    <div class="vz-link vz-button--micro">remove comment</div>
+                  </div>
+                </div>
+                <div class="vz-comment vz-comment--tail-left vz-comment--is-active-left">
+                  <div class="vz-comment__body">
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="vz-comment__actions">
+                    <div class="vz-link vz-button--micro">remove comment</div>
+                  </div>
+                </div>
+                <div class="vz-comment vz-comment--tail-right vz-comment--is-active-right">
+                  <div class="vz-comment__body">
+                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="vz-comment__actions">
+                    <div class="vz-link vz-button--micro">remove comment</div>
+                  </div>
+                </div>
+                <div class="vz-comment vz-comment--tail-right">
+                  <div class="vz-comment__body">
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="vz-comment__actions">
+                    <div class="vz-link vz-button--micro">remove comment</div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-xs-6">
+                  <h3>No tail</h3>
+                  <div class="vz-comment vz-comment--notail">
+                    <div class="vz-comment__body">
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="vz-comment__actions">
+                      <div class="vz-link vz-button--micro">remove comment</div>
+                    </div>
+                  </div>
+                  <div class="vz-comment vz-comment--notail">
+                    <div class="vz-comment__body">
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="vz-comment__actions">
+                      <div class="vz-link vz-button--micro">remove comment</div>
+                    </div>
+                  </div>
+                  <div class="vz-comment vz-comment--notail">
+                    <div class="vz-comment__body">
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="vz-comment__actions">
+                      <div class="vz-link vz-button--micro">remove comment</div>
+                    </div>
+                  </div>
+                  <div class="vz-comment vz-comment--notail">
+                    <div class="vz-comment__body">
+                      <p>Ut esse mollit est dolore reprehenderit voluptate ullamco laboris exercitation eiusmod fugiat dolore.</p>
+                    </div>
+                    <div class="vz-comment__actions">
+                      <div class="vz-link vz-button--micro">remove comment</div>
+                    </div>
+                  </div>
+                  <div class="vz-comment vz-comment--notail vz-comment--is-active">
+                    <div class="vz-comment__body">
+                      <p>Ut esse mollit est dolore reprehenderit voluptate ullamco laboris exercitation eiusmod fugiat dolore.</p>
+                    </div>
+                    <div class="vz-comment__actions">
+                      <div class="vz-link vz-button--micro">remove comment</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="vz-comment vz-comment--tail-left">
-            <div class="vz-comment__body">
-              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--tail-left vz-comment--is-active-left">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--tail-right vz-comment--is-active-right">
-            <div class="vz-comment__body">
-              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--tail-right">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <h3>No tail option</h3>
-          <div class="vz-comment vz-comment--notail">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--notail">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--notail">
-            <div class="vz-comment__body">
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--notail">
-            <div class="vz-comment__body">
-              <p>Ut esse mollit est dolore reprehenderit voluptate ullamco laboris exercitation eiusmod fugiat dolore.</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-          <div class="vz-comment vz-comment--notail vz-comment--is-active">
-            <div class="vz-comment__body">
-              <p>Ut esse mollit est dolore reprehenderit voluptate ullamco laboris exercitation eiusmod fugiat dolore.</p>
-            </div>
-            <div class="vz-comment__actions">
-              <div class="vz-link vz-button--micro">remove comment</div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <h1 class="vz-page__header">buttons</h1>
@@ -297,17 +304,19 @@
 
       <h1 class="vz-page__header">count bubbles</h1>
       <section class="ks-section">
-        <div class="ks-image-container">
-          <div class="vz-count-bubble vz-count-bubble--faded">0</div>
-          <img src="https://picsum.photos/200/180/?random" alt="">
-        </div>
-        <div class="ks-image-container">
-          <div class="vz-count-bubble">17</div>
-          <img src="https://picsum.photos/200/180/?random" alt="">
-        </div>
-        <div class="ks-image-container">
-          <div class="vz-count-bubble">999+</div>
-          <img src="https://picsum.photos/200/180/?random" alt="">
+        <div class="row">
+          <div class="ks-section__container">
+            <div class="vz-count-bubble vz-count-bubble--faded">0</div>
+            <img src="https://picsum.photos/200/180/?random" alt="">
+          </div>
+          <div class="ks-section__container">
+            <div class="vz-count-bubble">17</div>
+            <img src="https://picsum.photos/200/180/?random" alt="">
+          </div>
+          <div class="ks-section__container">
+            <div class="vz-count-bubble">999+</div>
+            <img src="https://picsum.photos/200/180/?random" alt="">
+          </div>
         </div>
       </section>
 
@@ -339,48 +348,69 @@
       <h1 class="vz-page__header">form</h1>
       <section class="ks-section">
         <form action="">
-          <div class="vz-form-group vz-form-group--valid">
-            <label class="vz-form-group__label" for="nome">Regular field</label>
-            <div class="vz-form-group__control">
-              <input class="vz-form-input" placeholder="Placeholder" type="text">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="vz-form-group vz-form-group--valid">
+                <label class="vz-form-group__label" for="nome">Regular field</label>
+                <div class="vz-form-group__control">
+                  <input class="vz-form-input" placeholder="Placeholder" type="text">
+                </div>
+                <p class="vz-form-group__feedback">success message.</p>
+              </div>
             </div>
-            <p class="vz-form-group__feedback">success message.</p>
-          </div>
-          <div class="vz-form-group vz-form-group--invalid">
-            <label class="vz-form-group__label" for="email">Validation error</label>
-            <div class="vz-form-group__control">
-              <input class="vz-form-input" placeholder="Placeholder" type="text">
+            <div class="col-xs-6">
+              <div class="vz-form-group vz-form-group--invalid">
+                <label class="vz-form-group__label" for="email">Validation error</label>
+                <div class="vz-form-group__control">
+                  <input class="vz-form-input" placeholder="Placeholder" type="text">
+                </div>
+                <p class="vz-form-group__feedback">error message.</p>
+                <p class="vz-form-group__help">*Do not use obvious words like your name, your town or date of birth as your password.</p>
+              </div>
             </div>
-            <p class="vz-form-group__feedback">error message.</p>
-            <p class="vz-form-group__help">*Do not use obvious words like your name, your town or date of birth as your password.</p>
+            <div class="col-xs-3">
+              <div class="vz-form-group">
+                <label class="vz-form-group__label" for="email">Date</label>
+                <div class="vz-form-group__control">
+                  <input class="vz-form-input" placeholder="Placeholder" type="date">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="vz-form-group">
-            <label class="vz-form-group__label" for="email">Date</label>
-            <div class="vz-form-group__control">
-              <input class="vz-form-input" placeholder="Placeholder" type="date">
+            <div class="row">
+              <div class="col-xs-6">
+                <label class="vz-form-group__label" for="">Select</label>
+                <div class="vz-form-group-control">
+                  <select class="vz-form-input--select" name="select">
+                    <option value="0" disabled>Unselectable</option>
+                    <option value="1">Selectable 1</option>
+                    <option value="2">Selectable 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <label class="vz-form-group__label" for="">Multiple Select</label>
+                <div class="vz-form-group-control">
+                  <select class="vz-form-input--select" name="select" multiple="yes">
+                    <option value="0" disabled>Unselectable</option>
+                    <option value="1">Selectable 1</option>
+                    <option value="2">Selectable 2</option>
+                    <option value="3">Selectable 3</option>
+                    <option value="4">Selectable 4</option>
+                    <option value="5">Selectable 5</option>
+                    <option value="6">Selectable 6</option>
+                    <option value="7">Selectable 7</option>
+                    <option value="8">Selectable 8</option>
+                    <option value="10">Selectable 10</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="vz-form-group">
-            <label class="vz-form-group__label" for="">Select</label>
-            <div class="vz-form-group-control">
-              <select class="vz-form-input--select" name="select">
-                <option value="0" disabled>Unselectable</option>
-                <option value="1">Selectable 1</option>
-                <option value="2">Selectable 2</option>
-              </select>
-              <select class="vz-form-input--select" name="select" multiple="yes">
-                <option value="0" disabled>Unselectable</option>
-                <option value="1">Selectable 1</option>
-                <option value="2">Selectable 2</option>
-                <option value="3">Selectable 3</option>
-                <option value="4">Selectable 4</option>
-                <option value="5">Selectable 5</option>
-                <option value="6">Selectable 6</option>
-                <option value="7">Selectable 7</option>
-                <option value="8">Selectable 8</option>
-                <option value="10">Selectable 10</option>
-              </select>
-            </div>
+
+          <div class="row">
+
           </div>
           <div class="vz-form-group">
             <label>Checkbox</label>
@@ -436,7 +466,7 @@
 
       <h1 class="vz-page__header">tables</h1>
       <section class="ks-section">
-        <h1 class="vz-page__header">compact table</h1>
+        <h2>compact table</h2>
         <table class="vz-table vz-table--compact">
           <thead>
             <tr>
@@ -574,7 +604,7 @@
 
         </table>
 
-        <h1 class="vz-page__header">standard table</h1>
+        <h2>standard table</h2>
         <table class="vz-table">
           <thead>
             <tr>
@@ -730,18 +760,90 @@
       </section>
 
       <h1 class="vz-page__header">progress bar</h1>
-      <div class="ks-section">
-        <div class="ks-section__container">
-          <h3>progress bar</h3>
-          <img src="https://picsum.photos/250/180/?random" alt="">
-          <div class="vz-progress-bar vz-progress-bar--loading"></div>
+      <section class="ks-section">
+        <div class="row">
+          <div class="ks-section__container">
+            <h3>progress bar</h3>
+            <img src="https://picsum.photos/250/180/?random" alt="">
+            <div class="vz-progress-bar vz-progress-bar--loading"></div>
+          </div>
+          <div class="ks-section__container">
+            <h3>loading</h3>
+            <img src="https://picsum.photos/250/180/?random" alt="">
+            <div class="vz-progress-bar vz-progress-bar--download"></div>
+          </div>
         </div>
-        <div class="ks-section__container">
-          <h3>loading</h3>
-          <img src="https://picsum.photos/250/180/?random" alt="">
-          <div class="vz-progress-bar vz-progress-bar--download"></div>
+      </section>
+
+      <h1 class="vz-page__header">cards</h1>
+      <section class="vz-page__header">
+        <div class="row">
+          <div class="col-xs-6">
+
+            <div class="vz-card">
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Início</div>
+                <div class="vz-card__content-description">01/09/2019 - 12:01</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Término</div>
+                <div class="vz-card__content-description">01/09/2019 - 18:46</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Total de horas</div>
+                <div class="vz-card__content-description">06:45</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Notas</div>
+                <div class="vz-card__content-description">Sint cillum anim proident enim nulla irure.</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Ações</div>
+                <div class="vz-card__content-description">
+                  <button class="vz-button vz-button--danger vz-button--small" type="">Delete</button>
+                  <button class="vz-button vz-button--secondary vz-button--small" type="">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="vz-card">
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Início</div>
+                <div class="vz-card__content-description">01/09/2019 - 12:01</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Término</div>
+                <div class="vz-card__content-description">01/09/2019 - 18:46</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Total de horas</div>
+                <div class="vz-card__content-description">06:45</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Notas</div>
+                <div class="vz-card__content-description">Sint cillum anim proident enim nulla irure.</div>
+                <div class="vz-card__content-separator"></div>
+              </div>
+              <div class="vz-card__content">
+                <div class="vz-card__content-title">Ações</div>
+                <div class="vz-card__content-description">
+                  <button class="vz-button vz-button--danger vz-button--small" type="">Delete</button>
+                  <button class="vz-button vz-button--secondary vz-button--small" type="">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
   </div>
 
   <script src="main.js"></script>

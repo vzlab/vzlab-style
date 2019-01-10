@@ -1,0 +1,38 @@
+.vz-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  padding: .5rem 2rem;
+  // max-width: 25rem;
+  cursor: pointer;
+  color: $black;
+}
+
+.vz-card:hover {
+  -webkit-box-shadow: 0px 10px 0px 0px $yes;
+  -moz-box-shadow: 0px 10px 0px 0px $yes;
+  box-shadow: 0px 5px 0px 0px $yes;
+}
+
+.vz-card__content {
+  margin-bottom: 2rem;
+}
+
+.vz-card__content-title {
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  // color: $accent;
+}
+
+.vz-card__content-description {
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.vz-card__content-separator {
+  // background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba($color: #07be8c, $alpha: 0.2);
+  margin: 1rem 0;
+  height: 1px;
+  width: 70%;
+}
