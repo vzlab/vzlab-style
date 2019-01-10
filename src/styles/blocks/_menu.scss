@@ -1,5 +1,9 @@
 .vz-menu {
   background-color: transparent;
+
+  a {
+    @include unlink;
+  }
 }
 
 .vz-menu__item {
@@ -23,13 +27,11 @@
 
 .vz-menu__item--collapsable {
   .vz-menu__item-submenu {
-    // transition: max-height .5s ease-in-out;
     padding: 0 0 .5rem 6rem;
     overflow: hidden;
     max-height: 0;
 
     a {
-      @include unlink;
       transition: all .25s ease-in-out;
       text-transform: uppercase;
       padding: .25rem 0;
@@ -54,14 +56,6 @@
     max-height: 50rem;
   }
 }
-
-// .vz-menu__item--collapsable:hover {
-//   .vz-menu__item-submenu {
-//     visibility: visible;
-//     height: auto;
-//     opacity: 1;
-//   }
-// }
 
 .vz-menu__item--active {
   background-color: whitesmoke;
