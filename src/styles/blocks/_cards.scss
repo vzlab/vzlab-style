@@ -41,10 +41,9 @@
 }
 
 .vz-card__footer {
-  // background-color: $yes;
+  flex-flow: row-reverse;
   display: flex;
   padding: 1rem;
-  flex-flow: row-reverse;
 
   button {
     margin: 0 .25rem;
@@ -52,8 +51,7 @@
 }
 
 .vz-card__separator {
-  // background-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba($color: $accent, $alpha: 1);
+  background-color: $accent;
   margin: 1rem 0 1rem 1rem;
   height: 4px;
   width: 31%;

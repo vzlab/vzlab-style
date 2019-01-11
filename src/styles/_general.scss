@@ -22,6 +22,10 @@ body::-moz-selection {
   background-color: $black;
 }
 
+input, textarea, select, button {
+  font: inherit;
+}
+
 dl {}
 
 dt {
