@@ -18,7 +18,33 @@
   }
 }
 
-.ks-code {
-  background-color: $white;
+.ks-figure {
+  background-color: $black;
+  margin-bottom: 4rem;
   padding: .5rem;
+
+  pre {
+    background-color: transparent;
+    color: $white;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.ks-highlighter {
+  background-color: rgba(255, 255, 255, .7);
+  color: $accent;
+}
+
+//html code colors
+.ks-nt {
+  color: #F92672;
+}
+
+.ks-na {
+  color: #A6E22E;
+}
+
+.ks-s {
+  color: #FD971F;
 }
