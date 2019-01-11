@@ -12,8 +12,6 @@
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
-
-
 }
 
 .vz-button--small {
@@ -96,24 +94,25 @@
 }
 
 // Links
-.vz-link {
+.vz-button--link {
   @extend .vz-button;
   background-color: transparent;
+  padding-bottom: 0;
 }
 
-.vz-link--primary {
+.vz-button--link-primary {
  color: $primary;
 }
-.vz-link--secondary {
+.vz-button--link-secondary {
   color: rgba(black, 0.6);
 }
-.vz-link--yes {
+.vz-button--link-yes {
   color: $yes;
 }
-.vz-link--no {
+.vz-button--link-no {
   color: $no;
 }
 
-.vz-link--danger {
+.vz-button--link-danger {
   color: $danger;
 }
