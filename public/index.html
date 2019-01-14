@@ -109,7 +109,7 @@
     </div>
 
     <div class="vz-layout__content">
-      <!-- <div class="ks-section">
+      <div class="ks-section">
         <h1 class="vz-page__header">Quick start</h1>
         <div class="ks-section__container">
           <p>Copy-paste the stylesheet <code class="ks-highlighter">&lt;link></code> into your <code class="ks-highlighter">&lt;head></code> before all other stylesheets to load our CSS.</p>
@@ -129,7 +129,7 @@
             <pre><code>&lt;<span class="ks-nt">link</span> <span class="ks-na">rel=</span><span class="ks-s">"stylesheet"</span> <span class="ks-na">type=</span><span class="ks-s">"text/css"</span> <span class="ks-na">href=</span><span class="ks-s">"https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"</span>></code></pre>
           </div>
         </div>
-      </div> -->
+      </div>
       <h1 class="vz-page__header">comments</h1>
       <section class="ks-section">
         <div class="vz-container">
@@ -789,15 +789,50 @@
           <div class="ks-section__container">
             <h3>progress bar</h3>
             <img src="https://picsum.photos/250/180/?random" alt="">
-            <div class="vz-progress-bar vz-progress-bar--loading"></div>
+            <div class="vz-progress-bar vz-progress-bar--loading" id="loading"></div>
           </div>
           <div class="ks-section__container">
             <h3>loading</h3>
             <img src="https://picsum.photos/250/180/?random" alt="">
             <div class="vz-progress-bar vz-progress-bar--download"></div>
           </div>
+          <div class="ks-section__container">
+            <h3>on complete loading</h3>
+            <img src="https://picsum.photos/250/180/?random" alt="">
+            <div class="vz-progress-bar vz-progress-bar--loading" id="complete"></div>
+          </div>
         </div>
       </section>
+      <script>
+        // simulate loading update
+        ;(function (el) {
+            var loadingCounter = 0
+            var loadingStartTime = Date.now()
+            var loadingPeriod = 9000 // ms
+            function loadingUpdateWidth() {
+                var loaded = ((Date.now() - loadingStartTime) % loadingPeriod) / loadingPeriod
+                var width = Math.round(loaded * 100) + "%"
+                el.style.width = width
+
+                window.setTimeout(loadingUpdateWidth, 800)
+            }
+            loadingUpdateWidth()
+        })(document.querySelector('#loading'));
+
+        (function (el) {
+          el.style.width = 0;
+          const container = el.parentElement;
+
+          container.addEventListener('click', function(e) {
+            el.style.width = `${100}%`;
+
+            window.setTimeout(() => {
+              el.classList.add('vz-progress-bar--complete');
+            }, 1000)
+          })
+
+        })(document.querySelector('#complete'));
+      </script>
 
       <h1 class="vz-page__header">cards</h1>
       <section class="ks-section">

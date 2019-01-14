@@ -6,11 +6,15 @@
 }
 
 .vz-progress-bar--loading {
-  animation: loading-progress-bar 5s infinite;
+  transition: width .5s ease-out, height .25s ease-in;
 }
 
 .vz-progress-bar--download {
   animation: infinite-progress-bar 2.5s infinite;
+}
+
+.vz-progress-bar--complete {
+  height: 0;
 }
 
 @keyframes infinite-progress-bar {
@@ -25,32 +29,5 @@
   to {
     -webkit-transform: translateX(50%) scaleX(0);
     transform: translateX(50%) scaleX(0);
-  }
-}
-
-@keyframes loading-progress-bar {
-  0%{
-    width: 10%;
-  }
-  10% {
-    width: 22%;
-  }
-  50% {
-    width: 22%;
-  }
-  60% {
-    width: 50%;
-  }
-  80% {
-    width: 50%;
-  }
-  90% {
-    width: 90%;
-  }
-  95% {
-    width: 90%;
-  }
-  100% {
-    width: 10%;
   }
 }
