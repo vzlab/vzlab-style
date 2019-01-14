@@ -826,7 +826,7 @@
           container.addEventListener('click', function(e) {
             el.style.width = `${100}%`;
 
-            window.setTimeout(() => {
+            window.setTimeout(function () {
               el.classList.add('vz-progress-bar--complete');
             }, 1000)
           })

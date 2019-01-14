@@ -2,17 +2,23 @@
 
 $white: #FFF;
 $black: #000;
-$off-white: GAINSBORO;
+$off-white: #dcdcdc;
 $grey: #dee2e6;
+$coral: #ff7f50;
+$blue: #007bff;
+$light-blue: #add8e6;
+$green: #07be8c;
+$gold: #ffd700;
+$red: #dc143c;
 
-$accent: CORAL;
-$primary: #007bff;
-$yes: #07be8c;
-$warning: GOLD;
-$info: LIGHTBLUE;
+$accent: $coral;
+$primary: $blue;
+$yes: $green;
+$warning: $gold;
+$info: $light-blue;
 $success: $yes;
 $no: $accent;
-$danger: CRIMSON;
+$danger: $red;
 
 //
 $container-width: 75rem;
