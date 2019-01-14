@@ -1,0 +1,39 @@
+@mixin button($variant, $color) {
+  $hover-color: darken($color, 10);
+
+  .vz-button--#{$variant} {
+    background-color: $color;
+    color: if(lightness($color) < 80%, $white, $black);
+  }
+
+  .vz-button--#{$variant}:hover, .vz-button--#{$variant}:focus {
+    background-color: $hover-color;
+    color: if(lightness($color) < 80%, $white, $black);
+  }
+}
+
+@mixin links($variant, $color) {
+  $hover-color: darken($color, 10);
+
+  .vz-button--link-#{$variant} {
+    color: $color;
+  }
+
+  .vz-button--link-#{$variant}:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin outlines($variant, $color) {
+
+  .vz-button--outline-#{$variant} {
+    border: 1px solid $color !important;
+    color: $color;
+  }
+
+  .vz-button--outline-#{$variant}:hover {
+    background-color: $color;
+    color: if(lightness($color) < 80%, $white, $black);
+  }
+
+}

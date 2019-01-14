@@ -1,3 +1,13 @@
+$button-colors: (
+  primary: dodgerblue,
+  secondary: #606060,
+  yes: $yes,
+  no: $accent,
+  warning: $warning,
+  danger: $danger
+) !default;
+
+
 .vz-button {
   @include unlink;
   transition: all 0.2s ease-in-out;
@@ -47,72 +57,26 @@
   width: 100%;
 }
 
-//Regular & small buttons
-.vz-button--primary {
-  background-color: $primary;
-  color: $white;
-}
-
-.vz-button--primary:hover {
-  background-color: #0054af;
-}
-
-.vz-button--secondary {
-  background-color: rgba(black, 0.6);
-  color: $white;
-}
-
-.vz-button--secondary:hover {
-  background-color: rgba(black, 0.7);
-}
-
-.vz-button--no {
-  background-color: $no;
-  color: $white;
-}
-
-.vz-button--no:hover {
-  background-color: #d66d47;
-}
-
-.vz-button--yes {
-  background-color: $yes;
-  color: $white;
-}
-
-.vz-button--yes:hover {
-  background-color: #079c73;
-}
-
-.vz-button--danger {
-  background-color: $danger;
-  color: $white;
-}
-
-.vz-button--danger:hover {
-  background-color: #c31334;
-}
-
 // Links
 .vz-button--link {
-  @extend .vz-button;
   background-color: transparent;
   padding-bottom: 0;
 }
 
-.vz-button--link-primary {
- color: $primary;
-}
-.vz-button--link-secondary {
-  color: rgba(black, 0.6);
-}
-.vz-button--link-yes {
-  color: $yes;
-}
-.vz-button--link-no {
-  color: $no;
+//Outline
+.vz-button--outline {
+  background-color: transparent;
+  border: 1px solid $off-white;
 }
 
-.vz-button--link-danger {
-  color: $danger;
+@each $variant, $color in $button-colors {
+  @include button($variant, $color);
+}
+
+@each $variant, $color in $button-colors {
+  @include links($variant, $color);
+}
+
+@each $variant, $color in $button-colors {
+  @include outlines($variant, $color);
 }

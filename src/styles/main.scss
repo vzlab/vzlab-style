@@ -1,5 +1,6 @@
 @import "variables";
 @import "lib/text";
+@import "lib/buttons-colors";
 @import "general";
 
 @import "blocks/action-card";
@@ -25,3 +26,5 @@
 @import "blocks/cards";
 @import "blocks/menu";
 @import "kitchen-sink";
+
+@include button('mahomeno', orange);
