@@ -16,5 +16,9 @@
 }
 
 .vz-action-card__description {
-  margin-bottom: 2.5rem;
+  @extend p;
+}
+
+.vz-action-card__buttons {
+  margin-top: 2.5rem;
 }

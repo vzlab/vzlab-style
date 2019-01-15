@@ -11,7 +11,7 @@
   transition: all .25s ease-in-out;
   text-transform: uppercase;
   background-color: $white;
-  padding: 1rem 2rem;
+  padding: 1rem;
   color: $black;
   display: flex;
   border: none;
@@ -64,9 +64,16 @@
 }
 
 .vz-menu__item-icon {
-  position: relative;
-  margin-right: 2rem;
-  height: 25px;
-  width: 16px;
-  top: 2px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  // height: 25px;
+  // width: 16px;
+  margin-top: -.17em;
+
+}
+
+i.icon {
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
 }

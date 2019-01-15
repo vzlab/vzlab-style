@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css">
-  <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -29,9 +29,9 @@
               <input type="checkbox" name="collapsable-01" id="collapsable-01">
               <label for="collapsable-01" class="vz-menu__item vz-menu__item--active">
                 <div class="vz-menu__item-icon">
-                  <ion-icon name="home"></ion-icon>
+                  <i class="icon ion-md-home"></i>
                 </div>
-                <p>home</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, reiciendis? Voluptatibus sit iure temporibus minima ullam, tempore cumque doloribus quidem, tempora excepturi nihil! Modi quaerat nostrum repudiandae, optio quibusdam accusamus.
               </label>
             </div>
 
@@ -39,9 +39,9 @@
               <input type="checkbox" name="collapsable-02" id="collapsable-02">
               <label for="collapsable-02" href="#" class="vz-menu__item">
                 <div class="vz-menu__item-icon">
-                  <ion-icon name="bulb"></ion-icon>
+                  <i class="icon ion-md-bulb"></i>
                 </div>
-                <p>ideias</p>
+                ideias
               </label>
             </div>
 
@@ -49,9 +49,9 @@
               <input type="checkbox" name="collapsable-03" id="collapsable-03">
               <label for="collapsable-03" class="vz-menu__item">
                 <div class="vz-menu__item-icon">
-                  <ion-icon name="star"></ion-icon>
+                  <i class="icon ion-md-star"></i>
                 </div>
-                <p>produção</p>
+                produção
               </label>
 
               <div class="vz-menu__item-submenu">
@@ -64,9 +64,9 @@
               <input type="checkbox" name="collapsable-04" id="collapsable-04">
               <label for="collapsable-04" class="vz-menu__item">
                 <div class="vz-menu__item-icon">
-                  <ion-icon name="stats"></ion-icon>
+                  <i class="icon ion-md-stats"></i>
                 </div>
-                <p>status</p>
+                status
               </label>
 
               <div class="vz-menu__item-submenu">
@@ -120,7 +120,7 @@
           <div class="ks-figure">
             <pre><code>&lt;<span class="ks-nt">link</span> <span class="ks-na">rel=</span><span class="ks-s">"stylesheet"</span> <span class="ks-na">type=</span><span class="ks-s">"text/css"</span> <span class="ks-na">href=</span><span class="ks-s">"https://fonts.googleapis.com/css?family=Titillium+Web:400,600"</span>></code></pre>
           </div>
-          <p>We are using Ionicos, so if you want to use the same icons copy-paste <code class="ks-highlighter">&lt;link></code> into your <code class="ks-highlighter">&lt;head></code>:</p>
+          <p>We are using Ionicons, so if you want to use the same icons copy-paste <code class="ks-highlighter">&lt;link></code> into your <code class="ks-highlighter">&lt;head></code>:</p>
           <div class="ks-figure">
             <pre><code>&lt;<span class="ks-nt">script</span> <span class="ks-s">"text/css"</span> <span class="ks-na">src=</span><span class="ks-s">"https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"</span>>&lt;/<span class="ks-nt">script</span>></code></pre>
           </div>
@@ -292,7 +292,7 @@
 
         <div class="vz-flash">
           <div class="vz-flash__indicator vz-flash__indicator--ok vz-flash__indicator--use-icon">
-              <ion-icon name="checkmark-circle" class="vz-flash__indicator-icon"></ion-icon>
+              <i class="vz-flash__indicator-icon icon ion-md-checkmark-circle"></i>
           </div>
           <div class="vz-flash__content vz-flash__content--ok">
             <p>Success, my dudes.</p>
@@ -301,7 +301,7 @@
 
         <div class="vz-flash">
           <div class="vz-flash__indicator vz-flash__indicator--wrong vz-flash__indicator--use-icon">
-            <ion-icon name="alert" class="vz-flash__indicator-icon"></ion-icon>
+            <i class="vz-flash__indicator-icon icon ion-md-alert"></i>
           </div>
           <div class="vz-flash__content vz-flash__content--wrong">
             <p>Something went wrong. Action needed.</p>
@@ -310,7 +310,7 @@
 
         <div class="vz-flash">
           <div class="vz-flash__indicator vz-flash__indicator--warning vz-flash__indicator--use-icon">
-            <ion-icon name="warning" class="vz-flash__indicator-icon"></ion-icon>
+            <i class="vz-flash__indicator-icon icon ion-md-warning"></i>
           </div>
           <div class="vz-flash__content vz-flash__content--warning">
             <p>This is a warning and I'm spelling it out for you.</p>
@@ -319,7 +319,7 @@
 
         <div class="vz-flash">
           <div class="vz-flash__indicator vz-flash__indicator--info vz-flash__indicator--use-icon">
-            <ion-icon name="information-circle" class="vz-flash__indicator-icon"></ion-icon>
+            <i class="vz-flash__indicator-icon icon ion-md-information-circle"></i>
           </div>
           <div class="vz-flash__content vz-flash__content--info">
             <p>A scheduled thing will happen this afternoon. No action is needded.</p>
@@ -360,15 +360,23 @@
     <section class="ks-section">
       <div class="vz-action-card">
         <div class="vz-action-card__title">Action Title</div>
-        <div class="vz-action-card__description">Are you really sure you want to delete this thing?</div>
-        <button class="vz-button vz-button--danger" type="">I'm sure! Delete.</button>
-        <button class="vz-button vz-button--primary" type="">Not really...please take me back.</button>
+        <div class="vz-action-card__description">
+          <p>Are you really sure you want to delete this thing?</p>
+        </div>
+        <div class="vz-action-card__buttons">
+          <button class="vz-button vz-button--danger" type="">I'm sure! Delete.</button>
+          <button class="vz-button vz-button--primary" type="">Not really...please take me back.</button>
+        </div>
       </div>
       <div class="vz-action-card">
         <div class="vz-action-card__title">Action Title</div>
-        <div class="vz-action-card__description">Are you really sure you want to delete this thing?</div>
-        <button class="vz-button vz-button--danger vz-button--full-width" type="">I'm sure! Delete.</button>
-        <button class="vz-button vz-button--primary vz-button--full-width" type="">Not really...please take me back.</button>
+        <div class="vz-action-card__description">
+          <p>Are you really sure you want to delete this thing?</p>
+        </div>
+        <div class="vz-action-card__buttons">
+          <button class="vz-button vz-button--danger vz-button--full-width" type="">I'm sure! Delete.</button>
+          <button class="vz-button vz-button--primary vz-button--full-width" type="">Not really...please take me back.</button>
+        </div>
       </div>
     </section>
 
