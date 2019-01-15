@@ -19,7 +19,7 @@
     color: $color;
   }
 
-  .vz-button--link-#{$variant}:hover {
+  .vz-button--link-#{$variant}:hover, .vz-button--#{$variant}:focus {
     color: $hover-color;
   }
 }
@@ -31,7 +31,7 @@
     color: $color;
   }
 
-  .vz-button--outline-#{$variant}:hover {
+  .vz-button--outline-#{$variant}:hover, .vz-button--#{$variant}:focus {
     background-color: $color;
     color: if(lightness($color) < 80%, $white, $black);
   }
