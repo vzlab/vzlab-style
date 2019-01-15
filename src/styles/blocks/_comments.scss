@@ -1,6 +1,7 @@
 .vz-comment {
   background-color: $white;
   margin: 1rem 1rem 2rem;
+  transition: all .25s;
   position: relative;
   cursor: pointer;
 }
@@ -25,7 +26,7 @@
   bottom: 1rem;
   border-bottom-color: $white;
   border-right-color: $white;
-  transition: border-color 250ms;
+  transition: border-color .25s;
 }
 
 .vz-comment--tail-right::before {
@@ -33,11 +34,11 @@
   bottom: 1rem;
   border-bottom-color: $white;
   border-left-color: $white;
-  transition: border-color 250ms;
+  transition: border-color .25s;
 }
 
 .vz-comment__body {
-  transition: border-color 250ms;
+  transition: border-color .25s;
   padding: 1rem;
 }
 
