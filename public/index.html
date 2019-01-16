@@ -31,7 +31,7 @@
                 <div class="vz-menu__item-icon">
                   <i class="icon ion-md-home"></i>
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, reiciendis? Voluptatibus sit iure temporibus minima ullam, tempore cumque doloribus quidem, tempora excepturi nihil! Modi quaerat nostrum repudiandae, optio quibusdam accusamus.
+                Home
               </label>
             </div>
 
@@ -122,7 +122,7 @@
           </div>
           <p>We are using Ionicons, so if you want to use the same icons copy-paste <code class="ks-highlighter">&lt;link></code> into your <code class="ks-highlighter">&lt;head></code>:</p>
           <div class="ks-figure">
-            <pre><code>&lt;<span class="ks-nt">script</span> <span class="ks-s">"text/css"</span> <span class="ks-na">src=</span><span class="ks-s">"https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"</span>>&lt;/<span class="ks-nt">script</span>></code></pre>
+            <pre><code>&lt;<span class="ks-nt">link</span> <span class="ks-na">rel=</span><span class="ks-s">"stylesheet"</span> <span class="ks-na">type=</span><span class="ks-s">"text/css"</span> <span class="ks-na">src=</span><span class="ks-s">"https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"</span>></code></pre>
           </div>
           <p>And if you want to use a Grid system you can use the following:</p>
           <div class="ks-figure">
@@ -278,6 +278,25 @@
 
       <h2>Close</h2>
       <button class="vz-button vz-button--square vz-button--close">✕</button>
+
+      <h2>with ionicons</h2>
+      <a class="vz-button vz-button--yes vz-button--uses-icon" href="#" role="button">
+        <i class="icon ion-md-thumbs-up"></i>
+        <span>Like</span>
+      </a>
+      <a class="vz-button vz-button--no vz-button--uses-icon" href="#" role="button">
+        <span>Dislike</span>
+        <i class="icon ion-md-thumbs-down"></i>
+      </a>
+      <h2>with ionicons large</h2>
+      <a class="vz-button vz-button--outline vz-button--uses-icon vz-button__icon--large" href="#" role="button">
+        <i class="icon ion-logo-github"></i>
+        <span>GitHub</span>
+      </a>
+      <a class="vz-button vz-button--outline vz-button--outline-no vz-button--uses-icon vz-button__icon--large" href="#" role="button">
+        <i class="icon ion-logo-youtube"></i>
+        <span>YouTube</span>
+      </a>
     </section>
 
     <h1 class="vz-page__header">flashes</h1>

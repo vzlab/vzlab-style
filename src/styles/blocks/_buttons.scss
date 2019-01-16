@@ -43,12 +43,13 @@ $button-colors: (
 }
 
 .vz-button--close {
-  background-color: rgba(black, .6);
+  background-color: rgba($black, .6);
+  border: 1px solid rgba($black, .7);
   color: $white;
 }
 
 .vz-button--close:hover {
-  background-color: rgba(black, .8);
+  background-color: rgba($black, .8);
 }
 
 .vz-button--full-width {
@@ -67,6 +68,28 @@ $button-colors: (
 .vz-button--outline {
   background-color: transparent;
   border: 1px solid $off-white;
+}
+
+//With icons
+.vz-button--uses-icon {
+  padding: 0.5rem 1rem;
+  position: relative;
+
+  i.icon {
+    width: inherit;
+  }
+}
+
+.vz-button--uses-icon > :first-child {
+  margin-right: .125rem
+}
+
+.vz-button--uses-icon > :last-child {
+  margin-left: .125rem
+}
+
+.vz-button__icon--large {
+  font-size: 1.7rem;
 }
 
 @each $variant, $color in $button-colors {

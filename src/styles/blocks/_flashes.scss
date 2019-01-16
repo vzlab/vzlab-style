@@ -16,11 +16,9 @@
 }
 
 .vz-flash__indicator-icon {
-  max-width: 45%;
+  font-size: 1.7rem;
   margin: 0 auto;
   color: $white;
-  height: auto;
-  width: 100%;
 }
 
 .vz-flash__content {
@@ -41,6 +39,10 @@
 
   @media #{$mobile} {
     width: 100%;
+  }
+
+  p {
+    margin: .5rem 0 .5rem;
   }
 }
 
