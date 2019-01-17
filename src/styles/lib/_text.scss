@@ -17,3 +17,30 @@
   font-size: 2.5rem;
   font-weight: 500;
 }
+
+$colors: (
+  white: $white,
+  black: $black,
+  off-white: $off-white,
+  grey: $grey,
+  coral: $coral,
+  blue: $blue,
+  light-blue: $light-blue,
+  green: $green,
+  gold: $gold,
+  red: $red,
+  accent: $accent,
+  primary: $primary,
+  yes: $yes,
+  warning: $warning,
+  info: $info,
+  success: $success,
+  no: $no,
+  danger: $danger
+);
+
+@each $color, $value in $colors {
+  .text-#{$color} {
+      color: $value !important;
+  }
+}
