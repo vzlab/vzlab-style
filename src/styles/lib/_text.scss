@@ -39,8 +39,8 @@ $colors: (
   danger: $danger
 );
 
-@each $color, $value in $colors {
-  .text-#{$color} {
-      color: $value !important;
+@each $color-name, $color in $colors {
+  .text-#{$color-name} {
+      color: $color !important;
   }
 }

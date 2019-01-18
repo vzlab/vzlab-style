@@ -78,17 +78,21 @@ $button-colors: (
   i.icon {
     width: inherit;
   }
+
+  > :first-child {
+    margin-right: .25rem;
+  }
+
+  > :last-child {
+    margin-left: .25rem;
+  }
 }
 
-.vz-button--uses-icon > :first-child {
-  margin-right: .125rem
+.vz-button--use-icon-medium {
+  font-size: 1.5rem;
 }
 
-.vz-button--uses-icon > :last-child {
-  margin-left: .125rem
-}
-
-.vz-button__icon--large {
+.vz-button--use-icon-large {
   font-size: 1.7rem;
 }
 
