@@ -1,11 +1,13 @@
 .vz-sidebar {
-  height: 100%;
-  display: flex;
   flex-flow: column nowrap;
+  position: sticky;
+  display: flex;
+  height: auto;
+  top: 0;
 }
 
 .vz-sidebar__options {
-  flex: 1 0 auto;
+  // flex: 1 0 auto;
 }
 
 .vz-sidebar__user {
