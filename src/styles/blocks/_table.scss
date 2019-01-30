@@ -34,7 +34,7 @@
   }
 
   th[scope=col] {
-    box-shadow: 0 1px 0 rgba(black, .1);;
+    box-shadow: 0 1px 0 rgba(black, .1);
     background-color: #f5f5f5;
     padding-bottom: 1rem;
     position: sticky;
@@ -45,9 +45,12 @@
     white-space: nowrap;
   }
 
+  .vz-table__actions a:first-child {
+    margin-right: .5rem;
+  }
+
   .vz-table__actions a {
     transition: all 0.15s ease-out;
-    margin-right: .75rem;
     color: #007bff;
     opacity: 0;
   }
