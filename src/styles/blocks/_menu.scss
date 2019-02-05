@@ -60,6 +60,7 @@
 
 .vz-menu__item--active {
   background-color: whitesmoke;
+  padding-left: calc(1rem - 4px);
   border-left: 4px solid $black;
   color: $black;
 }
