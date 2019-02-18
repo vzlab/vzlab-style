@@ -1,0 +1,29 @@
+.vz-modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.vz-modal__container {
+  border: 1px solid rbga(0, 0, 0, 0.2);
+  background-color: $white;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+  top: 50%;
+  left: 0;
+  padding: 2em;
+  transform: translateY(-50%);
+}
+
+.vz-modal__container-header {
+  margin-bottom: 2em;
+}
+
+.vz-modal__container-content {
+  margin-bottom: 2em;
+}
