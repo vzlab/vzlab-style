@@ -25,7 +25,38 @@
       <div class="vz-modal__container">
 
         <div class="vz-modal__container-header">
-          <button class="vz-button vz-button--square vz-button--close vz-modal--close">✕</button>
+          <button class="vz-button vz-button--square vz-button--close" data-dismiss="modal">✕</button>
+          <div class="vz-modal__title vz-page__header">Mapa de dublin, Irlanda</div>
+        </div>
+
+        <div class="vz-modal__container-content">
+          <div class="row">
+            <div class="col-xs-10">
+              <div class="vz-form-group">
+                <div class="vz-form-group__control">
+                  <input class="vz-form-input" placeholder="Placeholder" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="vz-button vz-button--full-width vz-button--primary">buscar</div>
+            </div>
+          </div>
+          <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=51.178829300000004,-1.8261830004623518&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=21&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
+        </div>
+
+        <div class="vz-modal__container-actions">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="vz-modal" id="example-modal-live">
+      <div class="vz-modal__container">
+
+        <div class="vz-modal__container-header">
+          <button class="vz-button vz-button--square vz-button--close" data-dismiss="modal">✕</button>
+          <div class="vz-modal__title vz-page__header">Mapa da Irlanda do Norte</div>
         </div>
 
         <div class="vz-modal__container-content">
@@ -1101,7 +1132,8 @@
 
     <h1 class="vz-page__header">modal</h1>
     <section class="ks-section">
-      <button class="vz-button vz-button--primary" data-target="example-modal" id="btn-modal">Open modal</button>
+      <button class="vz-button vz-button--primary" data-toggle="modal" data-target="example-modal" id="btn-modal">Open modal</button>
+      <button class="vz-button vz-button--primary" data-toggle="modal" data-target="example-modal-live" id="btn-modal">Open modal Live</button>
     </section>
 
   </div>

@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 1;
   display: none;
+  overflow-y: scroll;
 }
 
 .vz-modal__container {
@@ -18,6 +19,10 @@
   left: 0;
   padding: 2em;
   transform: translateY(-50%);
+}
+
+.vz-modal__title {
+  margin-top: 0.5em;
 }
 
 .vz-modal__container-header {
