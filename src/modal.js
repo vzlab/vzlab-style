@@ -3,17 +3,17 @@ const modal = [...document.querySelectorAll('.vz-modal')];
 const closeModalButton = [...document.querySelectorAll('[data-dismiss]')];
 
 const closeModal = (e) => {
-  modal.map(item => {
+  modal.map(target => {
     body.style.overflow = 'auto';
-    item.style.display = 'none';
+    target.style.display = 'none';
   })
 }
 
 const openModal = (e) => {
-  modal.map(item => {
-    if (e.target.dataset.target === item.id) {
+  modal.map(target => {
+    if (e.target.dataset.target === target.id) {
       body.style.overflow = 'hidden';
-      item.style.display = 'block';
+      target.style.display = 'block';
     }
   });
 
