@@ -8,11 +8,15 @@
   margin-right: 5px;
   height: auto;
   width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vz-flash__indicator--use-icon {
   display: flex;
   width: 59px;
+  font-size: 2rem;
 }
 
 .vz-flash__indicator-icon {
